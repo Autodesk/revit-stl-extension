@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Install", "Install", "{F09F3205-71C6-4CE8-B4DC-FE7D3A7DAAA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STLExport", "Source\STLExport.csproj", "{23F3F6FA-7A67-4D7E-983D-F2464DBE6C95}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "STLExport Setup", "Install\Setup\STLExport Setup.vdproj", "{7BE9D689-1441-46C4-86DB-CA7F084749BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modify Addin file", "Install\Modify Addin file\Modify Addin file.csproj", "{8B9B4068-2893-4615-99B2-C4F4423BD129}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23F3F6FA-7A67-4D7E-983D-F2464DBE6C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F3F6FA-7A67-4D7E-983D-F2464DBE6C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F3F6FA-7A67-4D7E-983D-F2464DBE6C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F3F6FA-7A67-4D7E-983D-F2464DBE6C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BE9D689-1441-46C4-86DB-CA7F084749BF}.Debug|Any CPU.ActiveCfg = Debug
+		{7BE9D689-1441-46C4-86DB-CA7F084749BF}.Debug|Any CPU.Build.0 = Debug
+		{7BE9D689-1441-46C4-86DB-CA7F084749BF}.Release|Any CPU.ActiveCfg = Release
+		{7BE9D689-1441-46C4-86DB-CA7F084749BF}.Release|Any CPU.Build.0 = Release
+		{8B9B4068-2893-4615-99B2-C4F4423BD129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B9B4068-2893-4615-99B2-C4F4423BD129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B9B4068-2893-4615-99B2-C4F4423BD129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B9B4068-2893-4615-99B2-C4F4423BD129}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7BE9D689-1441-46C4-86DB-CA7F084749BF} = {F09F3205-71C6-4CE8-B4DC-FE7D3A7DAAA7}
+		{8B9B4068-2893-4615-99B2-C4F4423BD129} = {F09F3205-71C6-4CE8-B4DC-FE7D3A7DAAA7}
+	EndGlobalSection
+EndGlobal

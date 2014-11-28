@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>STLExporter</Name>
+    <Assembly>.\STLExport.dll</Assembly>
+    <ClientId>1f5b27ff-bc4a-42cd-bbaf-f3b4735f4a8a</ClientId>
+    <FullClassName>BIM.STLExport.STLExporterUI</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
