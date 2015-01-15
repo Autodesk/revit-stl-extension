@@ -100,6 +100,13 @@ namespace BIM.STLExport
         FileStream fileWriteStream = null;
         BinaryWriter binaryWriter = null;
 
+        private Autodesk.Revit.DB.Color m_color = null;
+
+        public Autodesk.Revit.DB.Color Color
+        {
+            set { m_color = value; }
+        }
+
         /// <summary>
         /// Constructor
         /// </summary>
@@ -217,11 +224,17 @@ namespace BIM.STLExport
                     binaryWriter.Write((float)vertexArr[i]);
                 }
 
-                // add two spaces to stl file using two bytes.
-                byte[] anotherSpace = new byte[2];
-                anotherSpace[0] = (byte)/*MSG0*/'\0';
-                anotherSpace[1] = (byte)/*MSG0*/'\0';
-                binaryWriter.Write(anotherSpace);
+                // add color to stl file using two bytes.
+                if(m_color!=null)
+                    binaryWriter.Write((UInt16)(((m_color.Red) >>3) | (((m_color.Green) >>3)<<5) | (((m_color.Blue)>>3)<<10)));
+                else
+                {
+                    // add two spaces to stl file using two bytes.
+                    byte[] anotherSpace = new byte[2];
+                    anotherSpace[0] = (byte)/*MSG0*/'\0';
+                    anotherSpace[1] = (byte)/*MSG0*/'\0';
+                    binaryWriter.Write(anotherSpace);
+                }
             }
             catch (SecurityException)
             {

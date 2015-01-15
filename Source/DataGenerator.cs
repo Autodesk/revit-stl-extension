@@ -315,9 +315,9 @@ namespace BIM.STLExport
                     {
                         continue;
                     }
-
+                    
                     // get the solids in GeometryElement
-                    ScanGeomElement(geometry, null);
+                    ScanGeomElement(doc,geometry, null);
                 }
             }
         }
@@ -350,7 +350,7 @@ namespace BIM.STLExport
         /// </summary>
         /// <param name="geometry">The geometry element.</param>
         /// <param name="trf">The transformation.</param>
-        private void ScanGeomElement(GeometryElement geometry, Transform transform)
+        private void ScanGeomElement(Document document, GeometryElement geometry, Transform transform)
         {
             //get all geometric primitives contained in the GeometryElement
             foreach (GeometryObject gObject in geometry)
@@ -359,7 +359,7 @@ namespace BIM.STLExport
                 Solid solid = gObject as Solid;
                 if (null != solid)
                 {
-                    ScanSolid(solid, transform);
+                    ScanSolid(document,solid, transform);
                     continue;
                 }
 
@@ -367,14 +367,14 @@ namespace BIM.STLExport
                 GeometryInstance instance = gObject as GeometryInstance;
                 if (null != instance)
                 {
-                    ScanGeometryInstance(instance, transform);
+                    ScanGeometryInstance(document, instance, transform);
                     continue;
                 }
 
                 GeometryElement geomElement = gObject as GeometryElement;
                 if (null != geomElement)
                 {
-                    ScanGeomElement(geomElement, transform);
+                    ScanGeomElement(document,geomElement, transform);
                 }
             }
         }
@@ -384,7 +384,7 @@ namespace BIM.STLExport
         /// </summary>
         /// <param name="instance">The geometry instance.</param>
         /// <param name="trf">The transformation.</param>
-        private void ScanGeometryInstance(GeometryInstance instance, Transform transform)
+        private void ScanGeometryInstance(Document document, GeometryInstance instance, Transform transform)
         {
             GeometryElement instanceGeometry = instance.SymbolGeometry;
             if (null == instanceGeometry)
@@ -402,7 +402,7 @@ namespace BIM.STLExport
             }
 
             // get all geometric primitives contained in the GeometryElement
-            ScanGeomElement(instanceGeometry, newTransform);
+            ScanGeomElement(document,instanceGeometry, newTransform);
         }
 
         /// <summary>
@@ -410,9 +410,9 @@ namespace BIM.STLExport
         /// </summary>
         /// <param name="solid">The solid.</param>
         /// <param name="trf">The transformation.</param>
-        private void ScanSolid(Solid solid, Transform transform)
+        private void ScanSolid(Document document, Solid solid, Transform transform)
         {
-            GetTriangular(solid, transform);	// get triangles in the solid
+            GetTriangular(document, solid, transform);	// get triangles in the solid
         }
 
         /// <summary>
@@ -420,7 +420,7 @@ namespace BIM.STLExport
         /// </summary>
         /// <param name="solid">The solid contains triangulars</param>
         /// <param name="transform">The transformation.</param>
-        private void GetTriangular(Solid solid, Transform transform)
+        private void GetTriangular(Document document, Solid solid, Transform transform)
         {
             // a solid has many faces
             FaceArray faces = solid.Faces;
@@ -441,6 +441,7 @@ namespace BIM.STLExport
                 {
                     continue;
                 }
+
                 m_TriangularNumber += mesh.NumTriangles;
 
                 PlanarFace planarFace = face as PlanarFace;
@@ -486,6 +487,13 @@ namespace BIM.STLExport
                         m_TriangularNumber--;
                         STLDialogManager.ShowDebug(ex.Message);
                         continue;
+                    }
+
+                    if (m_Writer is SaveDataAsBinary && m_Settings.ExportColor)
+                    {
+                        Material material = document.GetElement(face.MaterialElementId) as Material;
+                        if(material!=null)
+                            ((SaveDataAsBinary)m_Writer).Color = material.Color;
                     }
 
                     m_Writer.WriteSection(normal, xyz);

@@ -160,7 +160,7 @@ namespace BIM.STLExport
                 m_SelectedDUT = dup;
 
                 // create settings object to save setting information
-                Settings aSetting = new Settings(saveFormat, exportRange, cbIncludeLinked.Checked, selectedCategories, dup);
+                Settings aSetting = new Settings(saveFormat, exportRange, cbIncludeLinked.Checked,cbExportColor.Checked, selectedCategories, dup);
 
                 // save Revit document's triangular data in a temporary file
                 m_Generator = new DataGenerator(m_Revit.Application, m_Revit.ActiveUIDocument.Document, m_Revit.ActiveUIDocument.Document.ActiveView);
@@ -240,5 +240,11 @@ namespace BIM.STLExport
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void rbExportFormat_CheckedChanged(object sender, EventArgs e)
+        {
+            cbExportColor.Enabled = rbBinary.Checked;
+        }
+
     }
 }
