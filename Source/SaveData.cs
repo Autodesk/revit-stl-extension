@@ -102,6 +102,9 @@ namespace BIM.STLExport
 
         private Autodesk.Revit.DB.Color m_color = null;
 
+        /// <summary>
+        /// Color of trangle mesh to export in Binary format.
+        /// </summary>
         public Autodesk.Revit.DB.Color Color
         {
             set { m_color = value; }

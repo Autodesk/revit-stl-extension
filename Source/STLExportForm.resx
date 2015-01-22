@@ -198,11 +198,38 @@
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="cbExportSharedCoordinates.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbExportSharedCoordinates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 174</value>
+  </data>
+  <data name="cbExportSharedCoordinates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 44</value>
+  </data>
+  <data name="cbExportSharedCoordinates.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="cbExportSharedCoordinates.Text" xml:space="preserve">
+    <value>Export in Shared Coordinates</value>
+  </data>
+  <data name="&gt;&gt;cbExportSharedCoordinates.Name" xml:space="preserve">
+    <value>cbExportSharedCoordinates</value>
+  </data>
+  <data name="&gt;&gt;cbExportSharedCoordinates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbExportSharedCoordinates.Parent" xml:space="preserve">
+    <value>tpGeneral</value>
+  </data>
+  <data name="&gt;&gt;cbExportSharedCoordinates.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="cbExportColor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="cbExportColor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 147</value>
+    <value>23, 144</value>
   </data>
   <data name="cbExportColor.Size" type="System.Drawing.Size, System.Drawing">
     <value>326, 44</value>
@@ -223,10 +250,10 @@
     <value>tpGeneral</value>
   </data>
   <data name="&gt;&gt;cbExportColor.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="comboBox_DUT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 210</value>
+    <value>63, 237</value>
   </data>
   <data name="comboBox_DUT.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 21</value>
@@ -244,13 +271,13 @@
     <value>tpGeneral</value>
   </data>
   <data name="&gt;&gt;comboBox_DUT.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 213</value>
+    <value>20, 245</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 13</value>
@@ -271,7 +298,7 @@
     <value>tpGeneral</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="cbIncludeLinked.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 114</value>
@@ -295,7 +322,7 @@
     <value>tpGeneral</value>
   </data>
   <data name="&gt;&gt;cbIncludeLinked.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="rbAscii.Location" type="System.Drawing.Point, System.Drawing">
     <value>167, 19</value>
@@ -367,7 +394,7 @@
     <value>tpGeneral</value>
   </data>
   <data name="&gt;&gt;gbSTLFormat.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="tpGeneral.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
