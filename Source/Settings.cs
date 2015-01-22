@@ -50,6 +50,7 @@ namespace BIM.STLExport
         private ElementsExportRange m_ExportRange;
         private bool m_IncludeLinkedModels;
         private bool m_exportColor;
+        private bool m_exportSharedCoordinates;
         private Dictionary<string, Category> m_SelectedCategories;
         private DisplayUnitType m_Units;
 
@@ -98,6 +99,17 @@ namespace BIM.STLExport
         }
 
         /// <summary>
+        /// Export point in shared coordinates.
+        /// </summary>
+        public bool ExportSharedCoordinates
+        {
+            get
+            {
+                return m_exportSharedCoordinates;
+            }
+        }
+
+        /// <summary>
         /// Include selected categories.
         /// </summary>
         public Dictionary<string, Category> SelectedCategories
@@ -127,6 +139,7 @@ namespace BIM.STLExport
             m_ExportRange = exportRange;
             m_IncludeLinkedModels = false;
             m_exportColor = false;
+            m_exportSharedCoordinates = false;
             m_SelectedCategories = new Dictionary<string, Category>();
             m_Units = DisplayUnitType.DUT_UNDEFINED;
         }
@@ -138,13 +151,14 @@ namespace BIM.STLExport
         /// <param name="exportRange">The export range.</param>
         /// <param name="includeLinkedModels">True to include linked models, false otherwise.</param>
         /// <param name="selectedCategories">The selected categories to be included.</param>
-        public Settings(SaveFormat saveFormat, ElementsExportRange exportRange, bool includeLinkedModels,bool exportColor,
+        public Settings(SaveFormat saveFormat, ElementsExportRange exportRange, bool includeLinkedModels,bool exportColor,bool exportSharedCoordinates,
             Dictionary<string, Category> selectedCategories, DisplayUnitType units)
         {
             m_SaveFormat = saveFormat;
             m_ExportRange = exportRange;
             m_IncludeLinkedModels = includeLinkedModels;
             m_exportColor = exportColor;
+            m_exportSharedCoordinates = exportSharedCoordinates;
             m_SelectedCategories = selectedCategories;
             m_Units = units;
         }

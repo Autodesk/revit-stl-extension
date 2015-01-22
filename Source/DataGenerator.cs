@@ -214,6 +214,7 @@ namespace BIM.STLExport
                 // scan the active document for categories
                 foreach (Category category in m_ActiveDocument.Settings.Categories)
                 {
+                    
                     if (!sortedCategories.ContainsKey(category.Name))
                         sortedCategories.Add(category.Name, category);
                 }
@@ -315,7 +316,7 @@ namespace BIM.STLExport
                     {
                         continue;
                     }
-                    
+                 
                     // get the solids in GeometryElement
                     ScanGeomElement(doc,geometry, null);
                 }
@@ -458,22 +459,36 @@ namespace BIM.STLExport
                         Autodesk.Revit.DB.XYZ[] triPnts = new Autodesk.Revit.DB.XYZ[3];
                         for (int n = 0; n < 3; ++n)
                         {
+                            double x, y, z;
                             Autodesk.Revit.DB.XYZ point = triangular.get_Vertex(n);
                             if (hasTransform)
                             {
                                 point = transform.OfPoint(point);
                             }
-                            if (m_Settings.Units != DisplayUnitType.DUT_UNDEFINED)
+                            if (m_Settings.ExportSharedCoordinates)
                             {
-                               xyz[3 * n] = UnitUtils.ConvertFromInternalUnits(point.X, m_Settings.Units);
-                               xyz[3 * n + 1] = UnitUtils.ConvertFromInternalUnits(point.Y, m_Settings.Units);
-                               xyz[3 * n + 2] = UnitUtils.ConvertFromInternalUnits(point.Z, m_Settings.Units);
+                                ProjectPosition ps = document.ActiveProjectLocation.get_ProjectPosition(point);
+                                x = ps.EastWest;
+                                y = ps.NorthSouth;
+                                z = ps.Elevation;
                             }
                             else
                             {
-                               xyz[3 * n] = point.X;
-                               xyz[3 * n + 1] = point.Y;
-                               xyz[3 * n + 2] = point.Z;
+                                x = point.X;
+                                y = point.Y;
+                                z = point.Z;
+                            }
+                            if (m_Settings.Units != DisplayUnitType.DUT_UNDEFINED)
+                            {
+                                xyz[3 * n] = UnitUtils.ConvertFromInternalUnits(x, m_Settings.Units);
+                                xyz[3 * n + 1] = UnitUtils.ConvertFromInternalUnits(y, m_Settings.Units);
+                                xyz[3 * n + 2] = UnitUtils.ConvertFromInternalUnits(z, m_Settings.Units);
+                            }
+                            else
+                            {
+                                xyz[3 * n] = x;
+                                xyz[3 * n + 1] = y;
+                                xyz[3 * n + 2] = z;
                             }
 
                             triPnts[n] = point;

@@ -64,6 +64,7 @@ namespace BIM.STLExport
             this.lbCategories = new System.Windows.Forms.CheckedListBox();
             this.btnCheckNone = new System.Windows.Forms.Button();
             this.btnCheckAll = new System.Windows.Forms.Button();
+            this.cbExportSharedCoordinates = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tpGeneral.SuspendLayout();
             this.gbSTLFormat.SuspendLayout();
@@ -102,6 +103,7 @@ namespace BIM.STLExport
             // tpGeneral
             // 
             this.tpGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.tpGeneral.Controls.Add(this.cbExportSharedCoordinates);
             this.tpGeneral.Controls.Add(this.cbExportColor);
             this.tpGeneral.Controls.Add(this.comboBox_DUT);
             this.tpGeneral.Controls.Add(this.label1);
@@ -187,6 +189,12 @@ namespace BIM.STLExport
             this.btnCheckAll.UseVisualStyleBackColor = true;
             this.btnCheckAll.Click += new System.EventHandler(this.btnCheckAll_Click);
             // 
+            // cbExportSharedCoordinates
+            // 
+            resources.ApplyResources(this.cbExportSharedCoordinates, "cbExportSharedCoordinates");
+            this.cbExportSharedCoordinates.Name = "cbExportSharedCoordinates";
+            this.cbExportSharedCoordinates.UseVisualStyleBackColor = true;
+            // 
             // STLExportForm
             // 
             resources.ApplyResources(this, "$this");
@@ -226,5 +234,6 @@ namespace BIM.STLExport
         private System.Windows.Forms.ComboBox comboBox_DUT;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox cbExportColor;
+        private System.Windows.Forms.CheckBox cbExportSharedCoordinates;
     }
 }
