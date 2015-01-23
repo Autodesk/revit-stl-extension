@@ -298,8 +298,8 @@ namespace BIM.STLExport
                         else
                         {
                             IEnumerable<Category> cats = from cat in m_Settings.SelectedCategories
-                                                         where cat.Value.Id == element.Category.Id
-                                                         select cat.Value;
+                                                         where cat.Id == element.Category.Id
+                                                         select cat;
 
                             if (cats.Count() == 0)
                             {

@@ -51,7 +51,7 @@ namespace BIM.STLExport
         private bool m_IncludeLinkedModels;
         private bool m_exportColor;
         private bool m_exportSharedCoordinates;
-        private Dictionary<string, Category> m_SelectedCategories;
+        private List<Category> m_SelectedCategories;
         private DisplayUnitType m_Units;
 
         /// <summary>
@@ -112,7 +112,7 @@ namespace BIM.STLExport
         /// <summary>
         /// Include selected categories.
         /// </summary>
-        public Dictionary<string, Category> SelectedCategories
+        public List<Category> SelectedCategories
         {
             get
             {
@@ -140,7 +140,7 @@ namespace BIM.STLExport
             m_IncludeLinkedModels = false;
             m_exportColor = false;
             m_exportSharedCoordinates = false;
-            m_SelectedCategories = new Dictionary<string, Category>();
+            m_SelectedCategories = new List<Category>();
             m_Units = DisplayUnitType.DUT_UNDEFINED;
         }
 
@@ -152,7 +152,7 @@ namespace BIM.STLExport
         /// <param name="includeLinkedModels">True to include linked models, false otherwise.</param>
         /// <param name="selectedCategories">The selected categories to be included.</param>
         public Settings(SaveFormat saveFormat, ElementsExportRange exportRange, bool includeLinkedModels,bool exportColor,bool exportSharedCoordinates,
-            Dictionary<string, Category> selectedCategories, DisplayUnitType units)
+            List<Category> selectedCategories, DisplayUnitType units)
         {
             m_SaveFormat = saveFormat;
             m_ExportRange = exportRange;

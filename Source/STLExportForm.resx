@@ -423,25 +423,25 @@
   <data name="&gt;&gt;tpGeneral.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lbCategories.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 3</value>
+  <data name="tvCategories.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
   </data>
-  <data name="lbCategories.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 259</value>
+  <data name="tvCategories.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 266</value>
   </data>
-  <data name="lbCategories.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="tvCategories.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;lbCategories.Name" xml:space="preserve">
-    <value>lbCategories</value>
+  <data name="&gt;&gt;tvCategories.Name" xml:space="preserve">
+    <value>tvCategories</value>
   </data>
-  <data name="&gt;&gt;lbCategories.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tvCategories.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lbCategories.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tvCategories.Parent" xml:space="preserve">
     <value>tpCategories</value>
   </data>
-  <data name="&gt;&gt;lbCategories.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tvCategories.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="btnCheckNone.Location" type="System.Drawing.Point, System.Drawing">
