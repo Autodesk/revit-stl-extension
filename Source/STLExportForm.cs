@@ -56,11 +56,13 @@ namespace BIM.STLExport
             // scan for categories to populate category list
             m_CategoryList = m_Generator.ScanCategories(true);
 
-            foreach (KeyValuePair<string, Category> kvp in m_CategoryList)
+            foreach (Category category in m_CategoryList.Values)
             {
-                lbCategories.Items.Add(kvp.Key.ToString(), true);
+                TreeNode treeNode = GetChildNode(category,m_Revit.ActiveUIDocument.Document.ActiveView);
+                if (treeNode != null)
+                    tvCategories.Nodes.Add(treeNode);                               
             }
-
+            
             string unitName = "Use Internal: Feet";
             m_DisplayUnits.Add(unitName, DisplayUnitType.DUT_UNDEFINED);
             int selectedIndex = comboBox_DUT.Items.Add(unitName);
@@ -90,10 +92,43 @@ namespace BIM.STLExport
             if (revit.ActiveUIDocument.Document.IsFamilyDocument)
             {
                 cbIncludeLinked.Enabled = false;
-                lbCategories.Enabled = false;
+                tvCategories.Enabled = false;
                 btnCheckAll.Enabled = false;
                 btnCheckNone.Enabled = false;
             }
+        }
+
+        /// <summary>
+        /// Get all subcategory.
+        /// </summary>
+        /// <param name="category"></param>
+        /// <param name="view">Current view.</param>
+        /// <returns></returns>
+        private TreeNode GetChildNode(Category category,Autodesk.Revit.DB.View view)
+        {
+            if(category == null)
+                return null;
+
+            if (!category.get_AllowsVisibilityControl(view))
+                return null;
+
+            TreeNode treeNode = new TreeNode(category.Name);
+            treeNode.Tag = category;
+            treeNode.Checked = true;
+
+            if(category.SubCategories.Size == 0)
+            {                
+                return treeNode;
+            }
+
+            foreach (Category subCategory in category.SubCategories)
+            {
+                TreeNode child = GetChildNode(subCategory,view);
+                if(child !=null)
+                    treeNode.Nodes.Add(child);
+            }
+
+            return treeNode;
         }
 
         /// <summary>
@@ -142,17 +177,14 @@ namespace BIM.STLExport
                 exportRange = ElementsExportRange.OnlyVisibleOnes;
 
                 // get selected categories from the category list
-                Dictionary<string, Category> selectedCategories = new Dictionary<string, Category>();
+                List<Category> selectedCategories = new List<Category>();
 
                 // only for projects
                 if (m_Revit.ActiveUIDocument.Document.IsFamilyDocument == false)
                 {
-                    foreach (Object obj in lbCategories.CheckedItems)
+                    foreach (TreeNode treeNode in tvCategories.Nodes)
                     {
-                        Category selectedCat = null;
-                        m_CategoryList.TryGetValue(obj.ToString(), out selectedCat);
-
-                        selectedCategories.Add(obj.ToString(), selectedCat);
+                        AddSelectedTreeNode(treeNode, selectedCategories);
                     }
                 }
 
@@ -191,6 +223,25 @@ namespace BIM.STLExport
         }
 
         /// <summary>
+        /// Add selected category into dictionary.
+        /// </summary>
+        /// <param name="treeNode"></param>
+        /// <param name="selectedCategories"></param>
+        private void AddSelectedTreeNode(TreeNode treeNode,List<Category> selectedCategories)
+        {
+            if (treeNode.Checked)
+              selectedCategories.Add((Category)treeNode.Tag);
+
+            if(treeNode.Nodes.Count != 0)
+            {
+                foreach(TreeNode child in treeNode.Nodes)
+                {
+                    AddSelectedTreeNode(child, selectedCategories);
+                }
+            }
+        }
+
+        /// <summary>
         /// Cancel button click event.
         /// </summary>
         /// <param name="sender">The sender.</param>
@@ -208,9 +259,9 @@ namespace BIM.STLExport
         /// <param name="e">The event args.</param>
         private void btnCheckAll_Click(object sender, EventArgs e)
         {
-            for (int index = 0; index < lbCategories.Items.Count; index++)
+            foreach (TreeNode treeNode in tvCategories.Nodes)
             {
-                lbCategories.SetItemChecked(index, true);
+                SetCheckedforTreeNode(treeNode,true);
             }
         }
 
@@ -221,9 +272,26 @@ namespace BIM.STLExport
         /// <param name="e">The event args.</param>
         private void btnCheckNone_Click(object sender, EventArgs e)
         {
-            foreach (int index in lbCategories.CheckedIndices)
+            foreach (TreeNode treeNode in tvCategories.Nodes)
             {
-                lbCategories.SetItemChecked(index, false);
+                SetCheckedforTreeNode(treeNode,false);
+            }
+        }
+
+        /// <summary>
+        /// Set the checked property of treenode to true or false.
+        /// </summary>
+        /// <param name="treeNode">The tree node.</param>
+        /// <param name="selected">Checked or not.</param>
+        private void SetCheckedforTreeNode(TreeNode treeNode,bool selected)
+        {
+            treeNode.Checked = selected;
+            if (treeNode.Nodes.Count != 0)
+            {
+                foreach (TreeNode child in treeNode.Nodes)
+                {
+                    SetCheckedforTreeNode(child, selected);
+                }
             }
         }
 

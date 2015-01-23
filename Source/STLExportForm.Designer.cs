@@ -61,10 +61,10 @@ namespace BIM.STLExport
             this.rbAscii = new System.Windows.Forms.RadioButton();
             this.rbBinary = new System.Windows.Forms.RadioButton();
             this.tpCategories = new System.Windows.Forms.TabPage();
-            this.lbCategories = new System.Windows.Forms.CheckedListBox();
             this.btnCheckNone = new System.Windows.Forms.Button();
             this.btnCheckAll = new System.Windows.Forms.Button();
             this.cbExportSharedCoordinates = new System.Windows.Forms.CheckBox();
+            this.tvCategories = new System.Windows.Forms.TreeView();
             this.tabControl1.SuspendLayout();
             this.tpGeneral.SuspendLayout();
             this.gbSTLFormat.SuspendLayout();
@@ -162,18 +162,11 @@ namespace BIM.STLExport
             // tpCategories
             // 
             this.tpCategories.BackColor = System.Drawing.SystemColors.Control;
-            this.tpCategories.Controls.Add(this.lbCategories);
+            this.tpCategories.Controls.Add(this.tvCategories);
             this.tpCategories.Controls.Add(this.btnCheckNone);
             this.tpCategories.Controls.Add(this.btnCheckAll);
             resources.ApplyResources(this.tpCategories, "tpCategories");
             this.tpCategories.Name = "tpCategories";
-            // 
-            // lbCategories
-            // 
-            this.lbCategories.CheckOnClick = true;
-            this.lbCategories.FormattingEnabled = true;
-            resources.ApplyResources(this.lbCategories, "lbCategories");
-            this.lbCategories.Name = "lbCategories";
             // 
             // btnCheckNone
             // 
@@ -194,6 +187,12 @@ namespace BIM.STLExport
             resources.ApplyResources(this.cbExportSharedCoordinates, "cbExportSharedCoordinates");
             this.cbExportSharedCoordinates.Name = "cbExportSharedCoordinates";
             this.cbExportSharedCoordinates.UseVisualStyleBackColor = true;
+            // 
+            // tvCategories
+            // 
+            this.tvCategories.CheckBoxes = true;
+            resources.ApplyResources(this.tvCategories, "tvCategories");
+            this.tvCategories.Name = "tvCategories";
             // 
             // STLExportForm
             // 
@@ -230,10 +229,10 @@ namespace BIM.STLExport
         private System.Windows.Forms.RadioButton rbBinary;
         private System.Windows.Forms.Button btnCheckNone;
         private System.Windows.Forms.Button btnCheckAll;
-        private System.Windows.Forms.CheckedListBox lbCategories;
         private System.Windows.Forms.ComboBox comboBox_DUT;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox cbExportColor;
         private System.Windows.Forms.CheckBox cbExportSharedCoordinates;
+        private System.Windows.Forms.TreeView tvCategories;
     }
 }
