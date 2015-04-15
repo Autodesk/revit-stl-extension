@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STLExport", "Source\STLExport.csproj", "{23F3F6FA-7A67-4D7E-983D-F2464DBE6C95}"
 EndProject
 Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup", "Setup\Setup.isproj", "{9C3F8462-1BF7-43C3-967A-0D71920918A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23F3F6FA-7A67-4D7E-983D-F2464DBE6C95} = {23F3F6FA-7A67-4D7E-983D-F2464DBE6C95}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
