@@ -345,7 +345,7 @@
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td>{B7B9AA1F-A975-4C35-A360-253C406A4C6A}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT5</td><td>{4C7B1D94-DA7A-4CA9-88DB-13B25021479D}</td><td>DATABASEDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>STLExport.Primary_output2</td><td>{83CE6F3B-9ED5-4271-BFAD-ED1B6608C44E}</td><td>DATABASEDIR</td><td>2</td><td/><td>stlexport.primary_output2</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>STL_Export.chm2</td><td>{AD63F83D-6FA8-40ED-AB31-DB2A579DFEFF}</td><td>DATABASEDIR</td><td>2</td><td/><td>stl_export.chm2</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>STL_Export.chm</td><td>{145C7783-A960-4F44-9944-4F8DB0965021}</td><td>DATABASEDIR</td><td>2</td><td/><td>stl_export.chm</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -556,7 +556,7 @@
 		<row><td>LicenseAgreement</td><td>DlgLine</td><td>Line</td><td>48</td><td>234</td><td>326</td><td>0</td><td>1</td><td/><td/><td/><td/><td>0</td><td/><td/><td/></row>
 		<row><td>LicenseAgreement</td><td>DlgTitle</td><td>Text</td><td>13</td><td>6</td><td>292</td><td>25</td><td>65539</td><td/><td>##IDS__IsLicenseDlg_LicenseAgreement##</td><td/><td/><td>0</td><td/><td/><td/></row>
 		<row><td>LicenseAgreement</td><td>ISPrintButton</td><td>PushButton</td><td>301</td><td>188</td><td>65</td><td>17</td><td>3</td><td/><td>##IDS_PRINT_BUTTON##</td><td>Agree</td><td/><td>0</td><td/><td/><td/></row>
-		<row><td>LicenseAgreement</td><td>Memo</td><td>ScrollableText</td><td>8</td><td>55</td><td>358</td><td>130</td><td>7</td><td/><td/><td/><td/><td>0</td><td/><td>&lt;VSSolutionFolder&gt;\Doc\LICENSE.rtf</td><td/></row>
+		<row><td>LicenseAgreement</td><td>Memo</td><td>ScrollableText</td><td>8</td><td>55</td><td>358</td><td>130</td><td>7</td><td/><td/><td/><td/><td>0</td><td/><td>&lt;VSSolutionFolder&gt;\Source\Resources\LICENSE.rtf</td><td/></row>
 		<row><td>LicenseAgreement</td><td>Next</td><td>PushButton</td><td>230</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_NEXT##</td><td>Cancel</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>MaintenanceType</td><td>Back</td><td>PushButton</td><td>164</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_BACK##</td><td>Next</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>MaintenanceType</td><td>Banner</td><td>Bitmap</td><td>0</td><td>0</td><td>374</td><td>44</td><td>1</td><td/><td/><td/><td/><td>0</td><td/><td/><td>NewBinary1</td></row>
@@ -1878,7 +1878,7 @@
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT4</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT5</td></row>
 		<row><td>AlwaysInstall</td><td>STLExport.Primary_output2</td></row>
-		<row><td>AlwaysInstall</td><td>STL_Export.chm2</td></row>
+		<row><td>AlwaysInstall</td><td>STL_Export.chm</td></row>
 	</table>
 
 	<table name="File">
@@ -1895,7 +1895,7 @@
 		<col def="S72">ISComponentSubFolder_</col>
 		<row><td>adskstlexporterhelp.htm2</td><td>ISX_DEFAULTCOMPONENT5</td><td>ADSKST~1.HTM|ADSKSTLExporterHelp.htm</td><td>0</td><td/><td/><td/><td>1</td><td>D:\stlexporter\Source\Resources\ADSKSTLExporterHelp.htm</td><td>1</td><td/></row>
 		<row><td>packagecontents.xml</td><td>ISX_DEFAULTCOMPONENT4</td><td>PACKAG~1.XML|PackageContents.xml</td><td>0</td><td/><td/><td/><td>1</td><td>D:\stlexporter\Source\Resources\PackageContents.xml</td><td>1</td><td/></row>
-		<row><td>stl_export.chm2</td><td>STL_Export.chm2</td><td>STL_EX~1.CHM|STL_Export.chm</td><td>0</td><td/><td/><td/><td>1</td><td>D:\stlexporter\Doc\STL_Export.chm</td><td>1</td><td/></row>
+		<row><td>stl_export.chm</td><td>STL_Export.chm</td><td>STL_EX~1.CHM|STL_Export.chm</td><td>0</td><td/><td/><td/><td>1</td><td>D:\stlexporter\Source\Resources\STL_Export.chm</td><td>1</td><td/></row>
 		<row><td>stlexport.addin2</td><td>ISX_DEFAULTCOMPONENT5</td><td>STLEXP~1.ADD|STLExport.addin</td><td>0</td><td/><td/><td/><td>1</td><td>D:\stlexporter\Source\Resources\STLExport.addin</td><td>1</td><td/></row>
 		<row><td>stlexport.primary_output2</td><td>STLExport.Primary_output2</td><td>STLExport.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;STLExport&gt;|Built</td><td>3</td><td/></row>
 		<row><td>stlexporter_32.png2</td><td>ISX_DEFAULTCOMPONENT5</td><td>STLEXP~1.PNG|STLExporter_32.png</td><td>0</td><td/><td/><td/><td>1</td><td>D:\stlexporter\Source\Resources\STLExporter_32.png</td><td>1</td><td/></row>
@@ -2049,7 +2049,7 @@
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td/><td/><td>_C054267F_8826_459A_A3E6_981899B96279_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT5</td><td/><td/><td>_A9D6F11A_1863_46B1_AA14_AFCE0B5E3726_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>STLExport.Primary_output2</td><td/><td/><td>_5BBEFD81_A8E1_42BB_8E42_AF0FBDCB59CC_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>STL_Export.chm2</td><td/><td/><td>_F874911A_F25E_4D9F_999E_5914743CAEE7_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>STL_Export.chm</td><td/><td/><td>_5B84A406_5B38_41FA_B01C_83982AF1F51A_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2677,7 +2677,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>STL Exporter for Revit</td><td>0</td><td/><td>-576537520</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>STL Exporter for Revit</td><td>0</td><td/><td>-1172109910</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>-576560241</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1033</td><td>The operating system is not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
@@ -3777,8 +3777,8 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>https://github.com/tauyoung/STLExporterForRevit</td><td>0</td><td/><td>-576580464</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>p</td><td>0</td><td/><td>-1197262033</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>http://www.STLExporterforRevit.com</td><td>0</td><td/><td>-1172109910</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>STL Exporter for Revit</td><td>0</td><td/><td>-1172109910</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-576560241</td></row>
 	</table>
 

@@ -225,8 +225,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\ADSKSTLExporterHelp.htm" />
+    <Content Include="Resources\LICENSE.txt" />
     <Content Include="Resources\STLExport.addin" />
     <Content Include="Resources\STLExporter_64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LICENSE.rtf" />
+    <None Include="Resources\STL_Export.chm" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
