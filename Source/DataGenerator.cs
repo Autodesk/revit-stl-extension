@@ -491,7 +491,8 @@ namespace BIM.STLExport
                                 xyz[3 * n + 2] = z;
                             }
 
-                            triPnts[n] = point;
+                            var mypoint = new XYZ(xyz[3 * n], xyz[3 * n + 1], xyz[3 * n + 2]);
+                            triPnts[n] = mypoint;
                         }
 
                         Autodesk.Revit.DB.XYZ pnt1 = triPnts[1] - triPnts[0];
