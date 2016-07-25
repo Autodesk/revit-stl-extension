@@ -342,10 +342,10 @@
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{FE158B6D-0CF0-4943-9E0E-5C7438A2CF11}</td><td>AUTODESK1</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{04F90D91-CB09-4932-ACBF-2024CD3FD901}</td><td>APPLICATIONPLUGINS</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT2</td><td>{B2D447D3-5B6F-4FF5-900B-14C202204053}</td><td>CommonAppDataFolder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{FEE4F1C3-3189-4946-BD61-A83BF5D1C0FE}</td><td>_017</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{FEE4F1C3-3189-4946-BD61-A83BF5D1C0FE}</td><td>_015</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td>{B7B9AA1F-A975-4C35-A360-253C406A4C6A}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>STLExport.Primary_output1</td><td>{613D7642-0ECF-4AF4-A7E8-8D7A9F20A9DE}</td><td>_017</td><td>2</td><td/><td>stlexport.primary_output1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>STL_Export.chm</td><td>{D26B8B1C-AFCC-4820-B01A-D563C48CF590}</td><td>_017</td><td>2</td><td/><td>stl_export.chm</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>STLExport.Primary_output1</td><td>{613D7642-0ECF-4AF4-A7E8-8D7A9F20A9DE}</td><td>_015</td><td>2</td><td/><td>stlexport.primary_output1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>STL_Export.chm</td><td>{D26B8B1C-AFCC-4820-B01A-D563C48CF590}</td><td>_015</td><td>2</td><td/><td>stl_export.chm</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1167,7 +1167,7 @@
 		<row><td>ProgramFilesFolder</td><td>TARGETDIR</td><td>.:PROGRA~1|program files</td><td/><td>0</td><td/></row>
 		<row><td>ProgramMenuFolder</td><td>TARGETDIR</td><td>.:Programs</td><td/><td>3</td><td/></row>
 		<row><td>RecentFolder</td><td>TARGETDIR</td><td>.:Recent</td><td/><td>0</td><td/></row>
-		<row><td>STL_EXPORTER_FOR_REVIT_2015</td><td>APPLICATIONPLUGINS</td><td>ADSK-S~1|ADSK-STLExporter2017.bundle</td><td/><td>0</td><td/></row>
+		<row><td>STL_EXPORTER_FOR_REVIT_2015</td><td>APPLICATIONPLUGINS</td><td>ADSK-S~1|ADSK-STLExporter2015.bundle</td><td/><td>0</td><td/></row>
 		<row><td>SendToFolder</td><td>TARGETDIR</td><td>.:SendTo</td><td/><td>3</td><td/></row>
 		<row><td>StartMenuFolder</td><td>TARGETDIR</td><td>.:STARTM~1|Start Menu</td><td/><td>3</td><td/></row>
 		<row><td>StartupFolder</td><td>TARGETDIR</td><td>.:StartUp</td><td/><td>3</td><td/></row>
@@ -1180,7 +1180,7 @@
 		<row><td>USERPROFILE</td><td>TARGETDIR</td><td>.:USERPR~1|UserProfile</td><td/><td>0</td><td/></row>
 		<row><td>WindowsFolder</td><td>TARGETDIR</td><td>.:Windows</td><td/><td>0</td><td/></row>
 		<row><td>WindowsVolume</td><td>TARGETDIR</td><td>.:WinRoot</td><td/><td>0</td><td/></row>
-		<row><td>_017</td><td>DATABASEDIR</td><td>2017</td><td/><td>0</td><td/></row>
+		<row><td>_015</td><td>DATABASEDIR</td><td>2015</td><td/><td>0</td><td/></row>
 	</table>
 
 	<table name="DrLocator">
@@ -1893,13 +1893,13 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>adskstlexporterhelp.htm</td><td>ISX_DEFAULTCOMPONENT3</td><td>ADSKST~1.HTM|ADSKSTLExporterHelp.htm</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Source\Resources\ADSKSTLExporterHelp.htm</td><td>1</td><td/></row>
-		<row><td>packagecontents.xml</td><td>ISX_DEFAULTCOMPONENT4</td><td>PACKAG~1.XML|PackageContents.xml</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Source\Resources\PackageContents.xml</td><td>1</td><td/></row>
-		<row><td>stl_export.chm</td><td>STL_Export.chm</td><td>STL_EX~1.CHM|STL_Export.chm</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Doc\STL_Export.chm</td><td>1</td><td/></row>
-		<row><td>stlexport.addin</td><td>ISX_DEFAULTCOMPONENT3</td><td>STLEXP~1.ADD|STLExport.addin</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Source\Resources\STLExport.addin</td><td>1</td><td/></row>
+		<row><td>adskstlexporterhelp.htm</td><td>ISX_DEFAULTCOMPONENT3</td><td>ADSKST~1.HTM|ADSKSTLExporterHelp.htm</td><td>0</td><td/><td/><td/><td>1</td><td>D:\stlexporter\Source\Resources\ADSKSTLExporterHelp.htm</td><td>1</td><td/></row>
+		<row><td>packagecontents.xml</td><td>ISX_DEFAULTCOMPONENT4</td><td>PACKAG~1.XML|PackageContents.xml</td><td>0</td><td/><td/><td/><td>1</td><td>D:\stlexporter\Source\Resources\PackageContents.xml</td><td>1</td><td/></row>
+		<row><td>stl_export.chm</td><td>STL_Export.chm</td><td>STL_EX~1.CHM|STL_Export.chm</td><td>0</td><td/><td/><td/><td>1</td><td>D:\stlexporter\Doc\STL_Export.chm</td><td>1</td><td/></row>
+		<row><td>stlexport.addin</td><td>ISX_DEFAULTCOMPONENT3</td><td>STLEXP~1.ADD|STLExport.addin</td><td>0</td><td/><td/><td/><td>1</td><td>D:\stlexporter\Source\Resources\STLExport.addin</td><td>1</td><td/></row>
 		<row><td>stlexport.primary_output1</td><td>STLExport.Primary_output1</td><td>STLExport.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;STLExport&gt;|Built</td><td>3</td><td/></row>
-		<row><td>stlexporter_32.png</td><td>ISX_DEFAULTCOMPONENT3</td><td>STLEXP~1.PNG|STLExporter_32.png</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Source\Resources\STLExporter_32.png</td><td>1</td><td/></row>
-		<row><td>stlexporter_80.png</td><td>ISX_DEFAULTCOMPONENT3</td><td>STLEXP~1.PNG|STLExporter_80.png</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Source\Resources\STLExporter_80.png</td><td>1</td><td/></row>
+		<row><td>stlexporter_32.png</td><td>ISX_DEFAULTCOMPONENT3</td><td>STLEXP~1.PNG|STLExporter_32.png</td><td>0</td><td/><td/><td/><td>1</td><td>D:\stlexporter\Source\Resources\STLExporter_32.png</td><td>1</td><td/></row>
+		<row><td>stlexporter_80.png</td><td>ISX_DEFAULTCOMPONENT3</td><td>STLEXP~1.PNG|STLExporter_80.png</td><td>0</td><td/><td/><td/><td>1</td><td>D:\stlexporter\Source\Resources\STLExporter_80.png</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2121,52 +2121,14 @@
 		<col def="I2">Exclude</col>
 		<row><td>ADDINMANAGER.DLL</td><td>1</td></row>
 		<row><td>ADWINDOWS.DLL</td><td>1</td></row>
-		<row><td>ANALYSISAPPSDBAPI.DLL</td><td>1</td></row>
-		<row><td>APIDBAPI.DLL</td><td>1</td></row>
 		<row><td>APIINTEROP.DLL</td><td>1</td></row>
-		<row><td>APIUIAPI.DLL</td><td>1</td></row>
-		<row><td>ARRAYELEMSDBAPI.DLL</td><td>1</td></row>
-		<row><td>ASSEMBLYDBAPI.DLL</td><td>1</td></row>
-		<row><td>BUILDINGSYSTEMSDBAPI.DLL</td><td>1</td></row>
-		<row><td>BUILDINGSYSTEMSUIAPI.DLL</td><td>1</td></row>
-		<row><td>CURTAINGRIDFAMILYDBAPI.DLL</td><td>1</td></row>
 		<row><td>DBMANAGEDSERVICES.DLL</td><td>1</td></row>
-		<row><td>DESKTOPMFCAPI.DLL</td><td>1</td></row>
-		<row><td>DETAILDBAPI.DLL</td><td>1</td></row>
-		<row><td>DETAILUIAPI.DLL</td><td>1</td></row>
-		<row><td>DPARTDBAPI.DLL</td><td>1</td></row>
-		<row><td>ELEMENTGROUPDBAPI.DLL</td><td>1</td></row>
-		<row><td>ENERGYANALYSISDBAPI.DLL</td><td>1</td></row>
-		<row><td>ENERGYANALYSISUTILITIESAPI.DLL</td><td>1</td></row>
-		<row><td>ESSENTIALSDBAPI.DLL</td><td>1</td></row>
-		<row><td>ESSENTIALSUIAPI.DLL</td><td>1</td></row>
-		<row><td>FAMILYDBAPI.DLL</td><td>1</td></row>
-		<row><td>GEOMUTILAPI.DLL</td><td>1</td></row>
-		<row><td>GRAPHICSAPI.DLL</td><td>1</td></row>
-		<row><td>HOSTOBJDBAPI.DLL</td><td>1</td></row>
-		<row><td>INTERFACEAPI.DLL</td><td>1</td></row>
-		<row><td>INTERFACEUTILAPI.DLL</td><td>1</td></row>
 		<row><td>MANAGEDMC3.DLL</td><td>1</td></row>
-		<row><td>MASSINGDBAPI.DLL</td><td>1</td></row>
-		<row><td>NUMBERINGDBAPI.DLL</td><td>1</td></row>
-		<row><td>POINTCLOUDACCESSAPI.DLL</td><td>1</td></row>
-		<row><td>REBARDBAPI.DLL</td><td>1</td></row>
 		<row><td>REVITADDINUTILITY.DLL</td><td>1</td></row>
 		<row><td>REVITAPI.DLL</td><td>1</td></row>
-		<row><td>REVITAPIFOUNDATION.DLL</td><td>1</td></row>
 		<row><td>REVITAPIUI.DLL</td><td>1</td></row>
-		<row><td>REVITDBAPI.DLL</td><td>1</td></row>
-		<row><td>REVITMFCAPI.DLL</td><td>1</td></row>
-		<row><td>REVITUIAPI.DLL</td><td>1</td></row>
-		<row><td>ROOMAREAPLANDBAPI.DLL</td><td>1</td></row>
-		<row><td>SCULPTINGDBAPI.DLL</td><td>1</td></row>
-		<row><td>SITEDBAPI.DLL</td><td>1</td></row>
-		<row><td>STAIRRAMPDBAPI.DLL</td><td>1</td></row>
-		<row><td>STRUCTURALANALYSISDBAPI.DLL</td><td>1</td></row>
-		<row><td>STRUCTURALDBAPI.DLL</td><td>1</td></row>
 		<row><td>UIFRAMEWORK.DLL</td><td>1</td></row>
 		<row><td>UIFRAMEWORKSERVICES.DLL</td><td>1</td></row>
-		<row><td>UTILITYAPI.DLL</td><td>1</td></row>
 	</table>
 
 	<table name="ISDisk1File">
@@ -2407,6 +2369,12 @@
 		<row><td>STLExport</td><td>Source\STLExport.csproj</td><td/><td>2</td></row>
 		<row><td>SystemFolder</td><td/><td/><td>1</td></row>
 		<row><td>WindowsFolder</td><td/><td/><td>1</td></row>
+	</table>
+
+	<table name="ISPowerShellWrap">
+		<col key="yes" def="s72">Action_</col>
+		<col key="yes" def="s72">Name</col>
+		<col def="S0">Value</col>
 	</table>
 
 	<table name="ISProductConfiguration">
@@ -2709,7 +2677,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>Autodesk, Inc.</td><td>0</td><td/><td>-878396371</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>STL Exporter for Revit</td><td>0</td><td/><td>-576537520</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>-576560241</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1033</td><td>The operating system is not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
@@ -3878,12 +3846,6 @@
 		<col def="s255">Value</col>
 	</table>
 
-	<table name="ISWSEWrap">
-		<col key="yes" def="s72">Action_</col>
-		<col key="yes" def="s72">Name</col>
-		<col def="S0">Value</col>
-	</table>
-
 	<table name="ISXmlElement">
 		<col key="yes" def="s72">ISXmlElement</col>
 		<col def="s72">ISXmlFile_</col>
@@ -4058,7 +4020,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{9165FA54-2B85-4429-8041-290CF8B4BE73}</td></row>
 		<row><td>ISUSSignature</td><td>{57588776-EC56-4A9D-9F26-082968BA935E}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewProject,viewSystemSearch,viewSetupDesign,viewUI,viewAppFiles,viewRelease,viewDesignPatches,viewISToday,viewRealSetupDesign,viewSetupTypes,viewUpgradePaths,viewUpdateService,viewFeatureFiles,viewObjects</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewProject,viewSystemSearch,viewSetupDesign,viewUI,viewAppFiles,viewRelease,viewDesignPatches,viewISToday,viewRealSetupDesign,viewSetupTypes,viewUpgradePaths,viewUpdateService,viewFeatureFiles</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4070,7 +4032,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>SaveAsSchema</td><td/></row>
 		<row><td>SccEnabled</td><td>0</td></row>
 		<row><td>SccPath</td><td/></row>
-		<row><td>SchemaVersion</td><td>776</td></row>
+		<row><td>SchemaVersion</td><td>774</td></row>
 		<row><td>Type</td><td>MSIE</td></row>
 	</table>
 
@@ -4431,9 +4393,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKAPPPOOLS</td><td>##IDS_PROGMSG_IIS_ROLLBACKAPPPOOLS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKVROOTS</td><td>##IDS_PROGMSG_IIS_ROLLBACKVROOTS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
-		<row><td>ProductCode</td><td>{F48A771C-0CF8-46BE-A6FD-549E21698AEE}</td><td/></row>
-		<row><td>ProductName</td><td>STL Exporter for Revit 2017</td><td/></row>
-		<row><td>ProductVersion</td><td>17.0.0.0</td><td/></row>
+		<row><td>ProductCode</td><td>{0477B426-4222-4CF0-B3FA-50BD17EBD41D}</td><td/></row>
+		<row><td>ProductName</td><td>STL Exporter for Revit</td><td/></row>
+		<row><td>ProductVersion</td><td>4.0.1</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
@@ -4448,7 +4410,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;ISACTIONPROP1</td><td/></row>
 		<row><td>SelectedSetupType</td><td>##IDS__DisplayName_Typical##</td><td/></row>
 		<row><td>SetupType</td><td>Typical</td><td/></row>
-		<row><td>UpgradeCode</td><td>{17044676-161D-4E9F-9FBF-BD60AC481C3C}</td><td/></row>
+		<row><td>UpgradeCode</td><td>{A7ED4901-3BBF-4306-A1E3-B8A09153D565}</td><td/></row>
 		<row><td>_IsMaintenance</td><td>Change</td><td/></row>
 		<row><td>_IsSetupTypeMin</td><td>Typical</td><td/></row>
 	</table>
@@ -5199,6 +5161,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISPathVariable</td><td>TestValue</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>The test value of the path variable.</td></row>
 		<row><td>ISPathVariable</td><td>Type</td><td>N</td><td/><td/><td/><td/><td/><td>1;2;4;8</td><td>The type of the path variable.</td></row>
 		<row><td>ISPathVariable</td><td>Value</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>The value of the path variable.</td></row>
+		<row><td>ISPowerShellWrap</td><td>Action_</td><td>N</td><td/><td/><td>CustomAction</td><td>1</td><td>Identifier</td><td/><td>Foreign key into CustomAction table</td></row>
+		<row><td>ISPowerShellWrap</td><td>Name</td><td>N</td><td/><td/><td/><td/><td>Text</td><td/><td>Property associated with this Action</td></row>
+		<row><td>ISPowerShellWrap</td><td>Value</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>Value associated with this Property</td></row>
 		<row><td>ISProductConfiguration</td><td>GeneratePackageCode</td><td>Y</td><td/><td/><td/><td/><td>Number</td><td>0;1</td><td>Indicates whether or not to generate a package code.</td></row>
 		<row><td>ISProductConfiguration</td><td>ISProductConfiguration</td><td>N</td><td/><td/><td/><td/><td>Text</td><td/><td>The name of the product configuration.</td></row>
 		<row><td>ISProductConfiguration</td><td>ProductConfigurationFlags</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>Product configuration (release) flags.</td></row>
@@ -5436,9 +5401,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISVirtualShortcut</td><td>Name</td><td>N</td><td/><td/><td/><td/><td>Identifier</td><td/><td>Property name</td></row>
 		<row><td>ISVirtualShortcut</td><td>Shortcut_</td><td>N</td><td/><td/><td>Shortcut</td><td>1</td><td>Identifier</td><td/><td>Foreign key into Shortcut table.</td></row>
 		<row><td>ISVirtualShortcut</td><td>Value</td><td>N</td><td/><td/><td/><td/><td/><td/><td>Property value</td></row>
-		<row><td>ISWSEWrap</td><td>Action_</td><td>N</td><td/><td/><td>CustomAction</td><td>1</td><td>Identifier</td><td/><td>Foreign key into CustomAction table</td></row>
-		<row><td>ISWSEWrap</td><td>Name</td><td>N</td><td/><td/><td/><td/><td>Text</td><td/><td>Property associated with this Action</td></row>
-		<row><td>ISWSEWrap</td><td>Value</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>Value associated with this Property</td></row>
 		<row><td>ISXmlElement</td><td>Content</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>Element contents</td></row>
 		<row><td>ISXmlElement</td><td>ISAttributes</td><td>Y</td><td/><td/><td/><td/><td>Number</td><td/><td>Internal XML element attributes</td></row>
 		<row><td>ISXmlElement</td><td>ISXmlElement</td><td>N</td><td/><td/><td/><td/><td>Identifier</td><td/><td>Primary key, non-localized, internal token for Xml element</td></row>
