@@ -13,4 +13,4 @@ Clicking on this application button on the UI, will open up a “Export STL” d
 - Update to support for Autodesk® Revit® 2017
 
 ##Contributing##
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+See [Contributing.md](Contributing.md) for details.
