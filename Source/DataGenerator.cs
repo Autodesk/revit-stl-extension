@@ -467,7 +467,7 @@ namespace BIM.STLExport
                             }
                             if (m_Settings.ExportSharedCoordinates)
                             {
-                                ProjectPosition ps = document.ActiveProjectLocation.get_ProjectPosition(point);
+                                ProjectPosition ps = document.ActiveProjectLocation.GetProjectPosition(point);
                                 x = ps.EastWest;
                                 y = ps.NorthSouth;
                                 z = ps.Elevation;
