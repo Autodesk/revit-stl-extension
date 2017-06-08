@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" ProductType="Application" Name="STL Exporter" AppVersion="2017" Description="This app is designed to produce a stereolithography file (STL) of your building model." Author="Autodesk" Icon="./Contents/2017/STLExporter.ico" AppNameSpace="appstore.exchange.autodesk.com" HelpFile="./Contents/2017/Resources/ADSKSTLExporterHelp.htm" ProductCode="{F48A771C-0CF8-46BE-A6FD-549E21698AEE}" UpgradeCode="{17044676-161D-4E9F-9FBF-BD60AC481C3C}" OnlineDocumentation="http://www.autodesk.com" FriendlyVersion="2017" SupportedLocales="Enu">
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" ProductType="Application" Name="STL Exporter" AppVersion="2018" Description="This app is designed to produce a stereolithography file (STL) of your building model." Author="Autodesk" Icon="./Contents/2018/STLExporter.ico" AppNameSpace="appstore.exchange.autodesk.com" HelpFile="./Contents/2018/Resources/ADSKSTLExporterHelp.htm" ProductCode="{F48A771C-0CF8-46BE-A6FD-549E21698AEE}" UpgradeCode="{17044676-161D-4E9F-9FBF-BD60AC481C3C}" OnlineDocumentation="http://www.autodesk.com" FriendlyVersion="2018" SupportedLocales="Enu">
   <CompanyDetails Name="Autodesk" Phone=" " Url="http://www.autodesk.com" Email="Revit.apps@autodesk.com"/>
-  <RuntimeRequirements OS="Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2017" SeriesMax="R2017" />
-  <Components Description="2017 parts">
-    <RuntimeRequirements OS="Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2017" SeriesMax="R2017" />
-    <ComponentEntry AppName="STLExporter" Version="2017" ModuleName="./Contents/2017/STLExport.addin" AppDescription="STLExporterforRevit" />
+  <RuntimeRequirements OS="Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2018" SeriesMax="R2018" />
+  <Components Description="2018 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2018" SeriesMax="R2018" />
+    <ComponentEntry AppName="STLExporter" Version="2018" ModuleName="./Contents/2018/STLExport.addin" AppDescription="STLExporterforRevit" />
   </Components>
 </ApplicationPackage>
