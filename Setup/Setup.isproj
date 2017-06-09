@@ -28,6 +28,7 @@
 		</TaggedOutputs> -->
 	</ItemGroup>
 	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2015Limited\InstallShield.targets"/>
+	<ItemGroup/>
 	<ItemGroup>
 		<ProjectReference Include="..\Source\STLExport.csproj">
 			<Name>STLExport</Name>
