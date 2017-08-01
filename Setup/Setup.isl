@@ -344,6 +344,8 @@
 		<row><td>ISX_DEFAULTCOMPONENT2</td><td>{B2D447D3-5B6F-4FF5-900B-14C202204053}</td><td>CommonAppDataFolder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{FEE4F1C3-3189-4946-BD61-A83BF5D1C0FE}</td><td>_018</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td>{B7B9AA1F-A975-4C35-A360-253C406A4C6A}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT5</td><td>{F4F12E46-46AA-4232-893B-A0A264FE31C8}</td><td>GENERAL_PUBLIC_LICENSE</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT6</td><td>{69E29A58-3209-47DA-80AF-08FA22226009}</td><td>GENERAL_PUBLIC_LICENSE</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>STLExport.Primary_output1</td><td>{613D7642-0ECF-4AF4-A7E8-8D7A9F20A9DE}</td><td>_018</td><td>2</td><td/><td>stlexport.primary_output1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>STL_Export.chm</td><td>{D26B8B1C-AFCC-4820-B01A-D563C48CF590}</td><td>_018</td><td>2</td><td/><td>stl_export.chm</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
@@ -942,8 +944,8 @@
 		<row><td>InstallChangeFolder</td><td>Up</td><td>DirectoryListUp</td><td>0</td><td>1</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Back</td><td>NewDialog</td><td>SplashBitmap</td><td>Display_IsBitmapDlg</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
-		<row><td>InstallWelcome</td><td>Next</td><td>NewDialog</td><td>LicenseAgreement</td><td>1</td><td>0</td></row>
-		<row><td>LicenseAgreement</td><td>Back</td><td>NewDialog</td><td>InstallWelcome</td><td>1</td><td>0</td></row>
+		<row><td>InstallWelcome</td><td>Next</td><td>NewDialog</td><td>ReadyToInstall</td><td>1</td><td>0</td></row>
+		<row><td>LicenseAgreement</td><td>Back</td><td>NewDialog</td><td>InstallWelcome</td><td>NOT Installed</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>ISPrintButton</td><td>DoAction</td><td>ISPrint</td><td>1</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>Next</td><td>NewDialog</td><td>ReadyToInstall</td><td>AgreeToLicense = "Yes"</td><td>0</td></row>
@@ -977,7 +979,7 @@
 		<row><td>ReadmeInformation</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>1</td></row>
 		<row><td>ReadmeInformation</td><td>Next</td><td>NewDialog</td><td>CustomerInformation</td><td>1</td><td>1</td></row>
 		<row><td>ReadyToInstall</td><td>Back</td><td>NewDialog</td><td>CustomSetup</td><td>Installed OR _IsSetupTypeMin = "Custom"</td><td>2</td></row>
-		<row><td>ReadyToInstall</td><td>Back</td><td>NewDialog</td><td>LicenseAgreement</td><td>NOT Installed</td><td>1</td></row>
+		<row><td>ReadyToInstall</td><td>Back</td><td>NewDialog</td><td>InstallWelcome</td><td>NOT Installed</td><td>1</td></row>
 		<row><td>ReadyToInstall</td><td>Back</td><td>NewDialog</td><td>MaintenanceType</td><td>Installed AND _IsMaintenance = "Reinstall"</td><td>3</td></row>
 		<row><td>ReadyToInstall</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
 		<row><td>ReadyToInstall</td><td>InstallNow</td><td>EndDialog</td><td>Return</td><td>OutOfNoRbDiskSpace &lt;&gt; 1</td><td>0</td></row>
@@ -1057,6 +1059,10 @@
 		<row><td>APPLICATIONPLUGINS</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 		<row><td>AUTODESK1</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>CommonAppDataFolder</td><td>ISX_DEFAULTCOMPONENT2</td></row>
+		<row><td>GENERAL_PUBLIC_LICENSE</td><td>ISX_DEFAULTCOMPONENT5</td></row>
+		<row><td>GENERAL_PUBLIC_LICENSE</td><td>ISX_DEFAULTCOMPONENT6</td></row>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT5</td></row>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT6</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1149,6 +1155,7 @@
 		<row><td>DesktopFolder</td><td>TARGETDIR</td><td>.:Desktop</td><td/><td>3</td><td/></row>
 		<row><td>FavoritesFolder</td><td>TARGETDIR</td><td>.:FAVORI~1|Favorites</td><td/><td>0</td><td/></row>
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
+		<row><td>GENERAL_PUBLIC_LICENSE</td><td>INSTALLDIR</td><td>GENERA~1|General Public License</td><td/><td>0</td><td/></row>
 		<row><td>GlobalAssemblyCache</td><td>TARGETDIR</td><td>.:Global~1|GlobalAssemblyCache</td><td/><td>0</td><td/></row>
 		<row><td>INSTALLDIR</td><td>STL_EXPORTER_FOR_REVIT_2018</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>ISCommonFilesFolder</td><td>CommonFilesFolder</td><td>Instal~1|InstallShield</td><td/><td>0</td><td/></row>
@@ -1159,6 +1166,7 @@
 		<row><td>MY_PRODUCT_NAME</td><td>AUTODESK</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
 		<row><td>MY_PRODUCT_NAME1</td><td>APPLICATIONPLUGINS</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
 		<row><td>MyPicturesFolder</td><td>TARGETDIR</td><td>.:MyPict~1|MyPictures</td><td/><td>0</td><td/></row>
+		<row><td>NEW_FOLDER_1</td><td>TARGETDIR</td><td>NEW_FOLDER_1</td><td/><td>0</td><td/></row>
 		<row><td>NetHoodFolder</td><td>TARGETDIR</td><td>.:NetHood</td><td/><td>0</td><td/></row>
 		<row><td>PersonalFolder</td><td>TARGETDIR</td><td>.:Personal</td><td/><td>0</td><td/></row>
 		<row><td>PrimaryVolumePath</td><td>TARGETDIR</td><td>.:Primar~1|PrimaryVolumePath</td><td/><td>0</td><td/></row>
@@ -1877,6 +1885,8 @@
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT2</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT3</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT4</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT5</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT6</td></row>
 		<row><td>AlwaysInstall</td><td>STLExport.Primary_output1</td></row>
 		<row><td>AlwaysInstall</td><td>STL_Export.chm</td></row>
 	</table>
@@ -1894,6 +1904,8 @@
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
 		<row><td>adskstlexporterhelp.htm</td><td>ISX_DEFAULTCOMPONENT3</td><td>ADSKST~1.HTM|ADSKSTLExporterHelp.htm</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Source\Resources\ADSKSTLExporterHelp.htm</td><td>1</td><td/></row>
+		<row><td>license.rtf</td><td>ISX_DEFAULTCOMPONENT6</td><td>LICENSE.rtf</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Revit\GIT\revit-stl-extension\Doc\LICENSE.rtf</td><td>1</td><td/></row>
+		<row><td>license.txt</td><td>ISX_DEFAULTCOMPONENT6</td><td>LICENSE.txt</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Revit\GIT\revit-stl-extension\Doc\LICENSE.txt</td><td>1</td><td/></row>
 		<row><td>packagecontents.xml</td><td>ISX_DEFAULTCOMPONENT4</td><td>PACKAG~1.XML|PackageContents.xml</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Source\Resources\PackageContents.xml</td><td>1</td><td/></row>
 		<row><td>stl_export.chm</td><td>STL_Export.chm</td><td>STL_EX~1.CHM|STL_Export.chm</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Doc\STL_Export.chm</td><td>1</td><td/></row>
 		<row><td>stlexport.addin</td><td>ISX_DEFAULTCOMPONENT3</td><td>STLEXP~1.ADD|STLExport.addin</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Source\Resources\STLExport.addin</td><td>1</td><td/></row>
@@ -2048,6 +2060,8 @@
 		<row><td>ISX_DEFAULTCOMPONENT2</td><td/><td/><td>_A15518DC_D72E_4586_9A5C_301495DC102F_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT3</td><td/><td/><td>_5B80ED6F_C2BD_4677_BE79_1861B4C3055E_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td/><td/><td>_C054267F_8826_459A_A3E6_981899B96279_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT5</td><td/><td/><td>_666B0086_D66B_4B36_86C4_D916DC3E25EF_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT6</td><td/><td/><td>_890D5A3C_27F4_406E_809F_737A8B0A5CD5_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>STLExport.Primary_output1</td><td/><td/><td>_976E5B72_8A21_40B2_B29A_240F3B5C2F9C_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>STL_Export.chm</td><td/><td/><td>_0FB76B80_424B_41A0_B4BD_2A4A21A72543_FILTER</td><td/><td/><td/><td/></row>
 	</table>
@@ -2427,6 +2441,7 @@
 		<col key="yes" def="s72">ISProductConfiguration_</col>
 		<col key="yes" def="s72">Property</col>
 		<col def="L255">Value</col>
+		<row><td>Express</td><td>MSIPackageFileName</td><td>STLExporterForRevit2018</td></row>
 	</table>
 
 	<table name="ISRelease">
@@ -2709,7 +2724,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>Autodesk, Inc.</td><td>0</td><td/><td>1260724334</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>Autodesk, Inc.</td><td>0</td><td/><td>-1415190739</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>-576560241</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1033</td><td>The operating system is not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
@@ -3809,8 +3824,8 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>http://www.Autodesk,Inc..com</td><td>0</td><td/><td>1260724334</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>Autodesk, Inc.</td><td>0</td><td/><td>1260724334</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>http://www.Autodesk,Inc..com</td><td>0</td><td/><td>-1415190739</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>Autodesk, Inc.</td><td>0</td><td/><td>-1415190739</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-576560241</td></row>
 	</table>
 
@@ -4040,8 +4055,8 @@
 		<col def="S0">Value</col>
 		<row><td>ActiveLanguage</td><td>1033</td></row>
 		<row><td>Comments</td><td/></row>
-		<row><td>CurrentMedia</td><td dt:dt="bin.base64" md5="6d78a46bf2c52ee27034bbcad20f7f95">
-QwBEAF8AUgBPAE0AAQBFAHgAcAByAGUAcwBzAA==
+		<row><td>CurrentMedia</td><td dt:dt="bin.base64" md5="de9f554a3bc05c12be9c31b998217995">
+UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 			</td></row>
 		<row><td>DefaultProductConfiguration</td><td>Express</td></row>
 		<row><td>EnableSwidtag</td><td>1</td></row>
@@ -4432,7 +4447,7 @@ QwBEAF8AUgBPAE0AAQBFAHgAcAByAGUAcwBzAA==
 		<row><td>PROGMSG_IIS_ROLLBACKVROOTS</td><td>##IDS_PROGMSG_IIS_ROLLBACKVROOTS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
 		<row><td>ProductCode</td><td>{8EAE2D36-B6E4-44A4-B996-60B07E084FE8}</td><td/></row>
-		<row><td>ProductName</td><td>STL Exporter for Revit 2018</td><td/></row>
+		<row><td>ProductName</td><td>STL Exporter For Revit 2018</td><td/></row>
 		<row><td>ProductVersion</td><td>18.0.0.0</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
