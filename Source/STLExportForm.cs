@@ -38,6 +38,7 @@ namespace BIM.STLExport
         private SortedDictionary<string, Category> m_CategoryList = new SortedDictionary<string, Category>();
         private SortedDictionary<string, DisplayUnitType> m_DisplayUnits = new SortedDictionary<string, DisplayUnitType>();
         private static DisplayUnitType m_SelectedDUT = DisplayUnitType.DUT_UNDEFINED;
+        private double? m_Detail;
 
         readonly Autodesk.Revit.UI.UIApplication m_Revit = null;
 
@@ -192,7 +193,7 @@ namespace BIM.STLExport
                 m_SelectedDUT = dup;
 
                 // create settings object to save setting information
-                Settings aSetting = new Settings(saveFormat, exportRange, cbIncludeLinked.Checked,cbExportColor.Checked,cbExportSharedCoordinates.Checked, selectedCategories, dup);
+                Settings aSetting = new Settings(saveFormat, exportRange, cbIncludeLinked.Checked,cbExportColor.Checked,cbExportSharedCoordinates.Checked, selectedCategories, dup, m_Detail);
 
                 // save Revit document's triangular data in a temporary file
                 m_Generator = new DataGenerator(m_Revit.Application, m_Revit.ActiveUIDocument.Document, m_Revit.ActiveUIDocument.Document.ActiveView);
@@ -314,5 +315,50 @@ namespace BIM.STLExport
             cbExportColor.Enabled = rbBinary.Checked;
         }
 
+        private void tbDetail_Rerender()
+        {
+            if (m_Detail == null)
+            {
+                trbDetail.Value = 0;
+                tbDetail.Text = "Auto";
+                return;
+            } else
+            {
+                // we are guarding against null already
+                double detailPercent = (double)m_Detail * 100.0;
+                trbDetail.Value = (int)Math.Round(detailPercent);
+                tbDetail.Text = detailPercent.ToString() + "%";
+            }
+        }
+
+        private void tbDetail_Validating(object sender, CancelEventArgs e)
+        {
+            double detail;
+            if (tbDetail.Text.ToLower() == "auto" ||
+                !Double.TryParse(tbDetail.Text.Trim('%'), out detail) ||
+                (detail < 0.0 || detail > 100.0))
+            {
+                m_Detail = null;
+                tbDetail_Rerender();
+                return;
+            }
+            m_Detail = detail / 100.0;
+            tbDetail_Rerender();
+        }
+
+        private void trbDetail_ValueChanged(object sender, EventArgs e)
+        {
+            if (trbDetail.Value == 0)
+            {
+                m_Detail = null;
+                tbDetail_Rerender();
+                return;
+            } else
+            {
+                double detail = trbDetail.Value / 100.0;
+                m_Detail = detail;
+                tbDetail_Rerender();
+            }
+        }
     }
 }

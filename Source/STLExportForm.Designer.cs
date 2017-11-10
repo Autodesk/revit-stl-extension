@@ -53,6 +53,7 @@ namespace BIM.STLExport
             this.btnSave = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpGeneral = new System.Windows.Forms.TabPage();
+            this.cbExportSharedCoordinates = new System.Windows.Forms.CheckBox();
             this.cbExportColor = new System.Windows.Forms.CheckBox();
             this.comboBox_DUT = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -61,14 +62,20 @@ namespace BIM.STLExport
             this.rbAscii = new System.Windows.Forms.RadioButton();
             this.rbBinary = new System.Windows.Forms.RadioButton();
             this.tpCategories = new System.Windows.Forms.TabPage();
+            this.tvCategories = new System.Windows.Forms.TreeView();
             this.btnCheckNone = new System.Windows.Forms.Button();
             this.btnCheckAll = new System.Windows.Forms.Button();
-            this.cbExportSharedCoordinates = new System.Windows.Forms.CheckBox();
-            this.tvCategories = new System.Windows.Forms.TreeView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.trbDetail = new System.Windows.Forms.TrackBar();
+            this.tbDetail = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tpGeneral.SuspendLayout();
             this.gbSTLFormat.SuspendLayout();
             this.tpCategories.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trbDetail)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancel
@@ -103,6 +110,12 @@ namespace BIM.STLExport
             // tpGeneral
             // 
             this.tpGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.tpGeneral.Controls.Add(this.label5);
+            this.tpGeneral.Controls.Add(this.label4);
+            this.tpGeneral.Controls.Add(this.label3);
+            this.tpGeneral.Controls.Add(this.tbDetail);
+            this.tpGeneral.Controls.Add(this.trbDetail);
+            this.tpGeneral.Controls.Add(this.label2);
             this.tpGeneral.Controls.Add(this.cbExportSharedCoordinates);
             this.tpGeneral.Controls.Add(this.cbExportColor);
             this.tpGeneral.Controls.Add(this.comboBox_DUT);
@@ -111,6 +124,12 @@ namespace BIM.STLExport
             this.tpGeneral.Controls.Add(this.gbSTLFormat);
             resources.ApplyResources(this.tpGeneral, "tpGeneral");
             this.tpGeneral.Name = "tpGeneral";
+            // 
+            // cbExportSharedCoordinates
+            // 
+            resources.ApplyResources(this.cbExportSharedCoordinates, "cbExportSharedCoordinates");
+            this.cbExportSharedCoordinates.Name = "cbExportSharedCoordinates";
+            this.cbExportSharedCoordinates.UseVisualStyleBackColor = true;
             // 
             // cbExportColor
             // 
@@ -168,6 +187,12 @@ namespace BIM.STLExport
             resources.ApplyResources(this.tpCategories, "tpCategories");
             this.tpCategories.Name = "tpCategories";
             // 
+            // tvCategories
+            // 
+            this.tvCategories.CheckBoxes = true;
+            resources.ApplyResources(this.tvCategories, "tvCategories");
+            this.tvCategories.Name = "tvCategories";
+            // 
             // btnCheckNone
             // 
             resources.ApplyResources(this.btnCheckNone, "btnCheckNone");
@@ -182,17 +207,39 @@ namespace BIM.STLExport
             this.btnCheckAll.UseVisualStyleBackColor = true;
             this.btnCheckAll.Click += new System.EventHandler(this.btnCheckAll_Click);
             // 
-            // cbExportSharedCoordinates
+            // label2
             // 
-            resources.ApplyResources(this.cbExportSharedCoordinates, "cbExportSharedCoordinates");
-            this.cbExportSharedCoordinates.Name = "cbExportSharedCoordinates";
-            this.cbExportSharedCoordinates.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
             // 
-            // tvCategories
+            // trbDetail
             // 
-            this.tvCategories.CheckBoxes = true;
-            resources.ApplyResources(this.tvCategories, "tvCategories");
-            this.tvCategories.Name = "tvCategories";
+            resources.ApplyResources(this.trbDetail, "trbDetail");
+            this.trbDetail.Maximum = 100;
+            this.trbDetail.Name = "trbDetail";
+            this.trbDetail.TickFrequency = 10;
+            this.trbDetail.ValueChanged += new System.EventHandler(this.trbDetail_ValueChanged);
+            // 
+            // tbDetail
+            // 
+            resources.ApplyResources(this.tbDetail, "tbDetail");
+            this.tbDetail.Name = "tbDetail";
+            this.tbDetail.Validating += new System.ComponentModel.CancelEventHandler(this.tbDetail_Validating);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
             // 
             // STLExportForm
             // 
@@ -211,6 +258,7 @@ namespace BIM.STLExport
             this.tpGeneral.PerformLayout();
             this.gbSTLFormat.ResumeLayout(false);
             this.tpCategories.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.trbDetail)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -234,5 +282,11 @@ namespace BIM.STLExport
         private System.Windows.Forms.CheckBox cbExportColor;
         private System.Windows.Forms.CheckBox cbExportSharedCoordinates;
         private System.Windows.Forms.TreeView tvCategories;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tbDetail;
+        private System.Windows.Forms.TrackBar trbDetail;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
