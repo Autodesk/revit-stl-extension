@@ -437,7 +437,17 @@ namespace BIM.STLExport
                 {
                     continue;
                 }
-                Mesh mesh = face.Triangulate();
+                Mesh mesh;
+
+                if (null != m_Settings.Detail)
+                {
+                    mesh = face.Triangulate((double)m_Settings.Detail);
+                }
+                else
+                {
+                    mesh = face.Triangulate();
+                }
+
                 if (null == mesh)
                 {
                     continue;

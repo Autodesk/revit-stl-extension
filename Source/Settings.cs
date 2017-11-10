@@ -53,6 +53,7 @@ namespace BIM.STLExport
         private bool m_exportSharedCoordinates;
         private List<Category> m_SelectedCategories;
         private DisplayUnitType m_Units;
+        private double? m_Detail;
 
         /// <summary>
         /// Binary or ASCII STL file.
@@ -128,6 +129,14 @@ namespace BIM.STLExport
               }
         }
 
+        public double? Detail
+        {
+            get
+            {
+                return m_Detail;
+            }
+        }
+
         /// <summary>
         /// Constructor.
         /// </summary>
@@ -142,6 +151,7 @@ namespace BIM.STLExport
             m_exportSharedCoordinates = false;
             m_SelectedCategories = new List<Category>();
             m_Units = DisplayUnitType.DUT_UNDEFINED;
+            m_Detail = null;
         }
 
         /// <summary>
@@ -151,8 +161,9 @@ namespace BIM.STLExport
         /// <param name="exportRange">The export range.</param>
         /// <param name="includeLinkedModels">True to include linked models, false otherwise.</param>
         /// <param name="selectedCategories">The selected categories to be included.</param>
+        /// <param name="detail">The detail level between 0 and 1 with which to save the STL</param>
         public Settings(SaveFormat saveFormat, ElementsExportRange exportRange, bool includeLinkedModels,bool exportColor,bool exportSharedCoordinates,
-            List<Category> selectedCategories, DisplayUnitType units)
+            List<Category> selectedCategories, DisplayUnitType units, double? detail)
         {
             m_SaveFormat = saveFormat;
             m_ExportRange = exportRange;
@@ -161,6 +172,7 @@ namespace BIM.STLExport
             m_exportSharedCoordinates = exportSharedCoordinates;
             m_SelectedCategories = selectedCategories;
             m_Units = units;
+            m_Detail = detail;
         }
     }
 }
