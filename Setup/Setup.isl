@@ -342,12 +342,12 @@
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{FE158B6D-0CF0-4943-9E0E-5C7438A2CF11}</td><td>AUTODESK1</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{04F90D91-CB09-4932-ACBF-2024CD3FD901}</td><td>APPLICATIONPLUGINS</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT2</td><td>{B2D447D3-5B6F-4FF5-900B-14C202204053}</td><td>CommonAppDataFolder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{FEE4F1C3-3189-4946-BD61-A83BF5D1C0FE}</td><td>_018</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{FEE4F1C3-3189-4946-BD61-A83BF5D1C0FE}</td><td>_019</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td>{B7B9AA1F-A975-4C35-A360-253C406A4C6A}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT5</td><td>{F4F12E46-46AA-4232-893B-A0A264FE31C8}</td><td>GENERAL_PUBLIC_LICENSE</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT6</td><td>{69E29A58-3209-47DA-80AF-08FA22226009}</td><td>GENERAL_PUBLIC_LICENSE</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>STLExport.Primary_output1</td><td>{613D7642-0ECF-4AF4-A7E8-8D7A9F20A9DE}</td><td>_018</td><td>2</td><td/><td>stlexport.primary_output1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>STL_Export.chm</td><td>{D26B8B1C-AFCC-4820-B01A-D563C48CF590}</td><td>_018</td><td>2</td><td/><td>stl_export.chm</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>STLExport.Primary_output1</td><td>{613D7642-0ECF-4AF4-A7E8-8D7A9F20A9DE}</td><td>_019</td><td>2</td><td/><td>stlexport.primary_output1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>STL_Export.chm</td><td>{D26B8B1C-AFCC-4820-B01A-D563C48CF590}</td><td>_019</td><td>2</td><td/><td>stl_export.chm</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1142,6 +1142,7 @@
 		<col def="S255">ISDescription</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S255">ISFolderName</col>
+		<row><td>ADSK_STLEXPORTER2019.BUNDLE</td><td>APPLICATIONPLUGINS</td><td>ADSK-S~1|ADSK-STLExporter2019.bundle</td><td/><td>0</td><td/></row>
 		<row><td>ALLUSERSPROFILE</td><td>TARGETDIR</td><td>.:ALLUSE~1|All Users</td><td/><td>0</td><td/></row>
 		<row><td>APPLICATIONPLUGINS</td><td>AUTODESK1</td><td>APPLIC~1|ApplicationPlugins</td><td/><td>0</td><td/></row>
 		<row><td>AUTODESK</td><td>ProgramFilesFolder</td><td>Autodesk</td><td/><td>0</td><td/></row>
@@ -1157,7 +1158,7 @@
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
 		<row><td>GENERAL_PUBLIC_LICENSE</td><td>INSTALLDIR</td><td>GENERA~1|General Public License</td><td/><td>0</td><td/></row>
 		<row><td>GlobalAssemblyCache</td><td>TARGETDIR</td><td>.:Global~1|GlobalAssemblyCache</td><td/><td>0</td><td/></row>
-		<row><td>INSTALLDIR</td><td>STL_EXPORTER_FOR_REVIT_2018</td><td>.</td><td/><td>0</td><td/></row>
+		<row><td>INSTALLDIR</td><td>ADSK_STLEXPORTER2019.BUNDLE</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>ISCommonFilesFolder</td><td>CommonFilesFolder</td><td>Instal~1|InstallShield</td><td/><td>0</td><td/></row>
 		<row><td>ISMyCompanyDir</td><td>ProgramFilesFolder</td><td>MYCOMP~1|My Company Name</td><td/><td>0</td><td/></row>
 		<row><td>ISMyProductDir</td><td>ISMyCompanyDir</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
@@ -1188,7 +1189,7 @@
 		<row><td>USERPROFILE</td><td>TARGETDIR</td><td>.:USERPR~1|UserProfile</td><td/><td>0</td><td/></row>
 		<row><td>WindowsFolder</td><td>TARGETDIR</td><td>.:Windows</td><td/><td>0</td><td/></row>
 		<row><td>WindowsVolume</td><td>TARGETDIR</td><td>.:WinRoot</td><td/><td>0</td><td/></row>
-		<row><td>_018</td><td>DATABASEDIR</td><td>2018</td><td/><td>0</td><td/></row>
+		<row><td>_019</td><td>DATABASEDIR</td><td>2019</td><td/><td>0</td><td/></row>
 	</table>
 
 	<table name="DrLocator">
@@ -1904,8 +1905,8 @@
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
 		<row><td>adskstlexporterhelp.htm</td><td>ISX_DEFAULTCOMPONENT3</td><td>ADSKST~1.HTM|ADSKSTLExporterHelp.htm</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Source\Resources\ADSKSTLExporterHelp.htm</td><td>1</td><td/></row>
-		<row><td>license.rtf</td><td>ISX_DEFAULTCOMPONENT6</td><td>LICENSE.rtf</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Revit\GIT\revit-stl-extension\Doc\LICENSE.rtf</td><td>1</td><td/></row>
-		<row><td>license.txt</td><td>ISX_DEFAULTCOMPONENT6</td><td>LICENSE.txt</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Revit\GIT\revit-stl-extension\Doc\LICENSE.txt</td><td>1</td><td/></row>
+		<row><td>license.rtf</td><td>ISX_DEFAULTCOMPONENT5</td><td>LICENSE.rtf</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Revit\revit-stl-extension\Doc\LICENSE.rtf</td><td>1</td><td/></row>
+		<row><td>license.txt</td><td>ISX_DEFAULTCOMPONENT5</td><td>LICENSE.txt</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Revit\revit-stl-extension\Doc\LICENSE.txt</td><td>1</td><td/></row>
 		<row><td>packagecontents.xml</td><td>ISX_DEFAULTCOMPONENT4</td><td>PACKAG~1.XML|PackageContents.xml</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Source\Resources\PackageContents.xml</td><td>1</td><td/></row>
 		<row><td>stl_export.chm</td><td>STL_Export.chm</td><td>STL_EX~1.CHM|STL_Export.chm</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Doc\STL_Export.chm</td><td>1</td><td/></row>
 		<row><td>stlexport.addin</td><td>ISX_DEFAULTCOMPONENT3</td><td>STLEXP~1.ADD|STLExport.addin</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ISPROJECTDIR&gt;\..\..\Source\Resources\STLExport.addin</td><td>1</td><td/></row>
@@ -2441,7 +2442,7 @@
 		<col key="yes" def="s72">ISProductConfiguration_</col>
 		<col key="yes" def="s72">Property</col>
 		<col def="L255">Value</col>
-		<row><td>Express</td><td>MSIPackageFileName</td><td>STLExporterForRevit2018</td></row>
+		<row><td>Express</td><td>MSIPackageFileName</td><td>STLExporterForRevit2019</td></row>
 	</table>
 
 	<table name="ISRelease">
@@ -3824,7 +3825,7 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>-576560241</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>http://www.Autodesk,Inc..com</td><td>0</td><td/><td>-1415190739</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>https://www.autodesk.com</td><td>0</td><td/><td>1386663568</td></row>
 		<row><td>ID_STRING2</td><td>1033</td><td>Autodesk, Inc.</td><td>0</td><td/><td>-1415190739</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-576560241</td></row>
 	</table>
@@ -3832,7 +3833,7 @@
 	<table name="ISSwidtagProperty">
 		<col key="yes" def="s72">Name</col>
 		<col def="s0">Value</col>
-		<row><td>UniqueId</td><td>BD5C87C7-4CFC-45EA-9D09-FA8A08E080C1</td></row>
+		<row><td>UniqueId</td><td>6EB43C9A-6DF3-43C0-92AF-759EA931EEA8</td></row>
 	</table>
 
 	<table name="ISTargetImage">
@@ -4059,7 +4060,7 @@
 UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 			</td></row>
 		<row><td>DefaultProductConfiguration</td><td>Express</td></row>
-		<row><td>EnableSwidtag</td><td>1</td></row>
+		<row><td>EnableSwidtag</td><td>0</td></row>
 		<row><td>ISCompilerOption_CompileBeforeBuild</td><td>1</td></row>
 		<row><td>ISCompilerOption_Debug</td><td>0</td></row>
 		<row><td>ISCompilerOption_IncludePath</td><td/></row>
@@ -4446,9 +4447,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKAPPPOOLS</td><td>##IDS_PROGMSG_IIS_ROLLBACKAPPPOOLS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKVROOTS</td><td>##IDS_PROGMSG_IIS_ROLLBACKVROOTS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
-		<row><td>ProductCode</td><td>{8EAE2D36-B6E4-44A4-B996-60B07E084FE8}</td><td/></row>
-		<row><td>ProductName</td><td>STL Exporter For Revit 2018</td><td/></row>
-		<row><td>ProductVersion</td><td>18.0.0.0</td><td/></row>
+		<row><td>ProductCode</td><td>{D702AF38-3F62-486C-90DF-D4F91A69795B}</td><td/></row>
+		<row><td>ProductName</td><td>STL Exporter For Revit 2019</td><td/></row>
+		<row><td>ProductVersion</td><td>19.0.0.0</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
@@ -4463,7 +4464,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;ISACTIONPROP1</td><td/></row>
 		<row><td>SelectedSetupType</td><td>##IDS__DisplayName_Typical##</td><td/></row>
 		<row><td>SetupType</td><td>Typical</td><td/></row>
-		<row><td>UpgradeCode</td><td>{8E33C33D-AD24-4BD4-B2D5-74D3A04E723C}</td><td/></row>
+		<row><td>UpgradeCode</td><td>{1109619D-1230-48E8-B642-C9D8562C6BAD}</td><td/></row>
 		<row><td>_IsMaintenance</td><td>Change</td><td/></row>
 		<row><td>_IsSetupTypeMin</td><td>Typical</td><td/></row>
 	</table>

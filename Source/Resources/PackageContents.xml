@@ -1,9 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" ProductType="Application" Name="STL Exporter" AppVersion="2018" Description="This app is designed to produce a stereolithography file (STL) of your building model." Author="Autodesk" Icon="./Contents/2018/STLExporter.ico" AppNameSpace="appstore.exchange.autodesk.com" HelpFile="./Contents/2018/Resources/ADSKSTLExporterHelp.htm" ProductCode="{F48A771C-0CF8-46BE-A6FD-549E21698AEE}" UpgradeCode="{17044676-161D-4E9F-9FBF-BD60AC481C3C}" OnlineDocumentation="http://www.autodesk.com" FriendlyVersion="2018" SupportedLocales="Enu">
-  <CompanyDetails Name="Autodesk" Phone=" " Url="http://www.autodesk.com" Email="Revit.apps@autodesk.com"/>
-  <RuntimeRequirements OS="Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2018" SeriesMax="R2018" />
-  <Components Description="2018 parts">
-    <RuntimeRequirements OS="Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2018" SeriesMax="R2018" />
-    <ComponentEntry AppName="STLExporter" Version="2018" ModuleName="./Contents/2018/STLExport.addin" AppDescription="STLExporterforRevit" />
+<ApplicationPackage 
+  SchemaVersion="1.0" 
+  AutodeskProduct="Revit" 
+  ProductType="Application" 
+  Name="STL Exporter" 
+  AppVersion="2019" 
+  Description="This app is designed to produce a stereolithography file (STL) of your building model." 
+  Author="Autodesk" 
+  Icon="./Contents/2019/STLExporter.ico" 
+  AppNameSpace="appstore.exchange.autodesk.com" 
+  HelpFile="./Contents/2019/Resources/ADSKSTLExporterHelp.htm" 
+  ProductCode="{D702AF38-3F62-486C-90DF-D4F91A69795B}" 
+  UpgradeCode="{1109619D-1230-48E8-B642-C9D8562C6BAD}" 
+  OnlineDocumentation="https://www.autodesk.com" 
+  FriendlyVersion="2019" 
+  SupportedLocales="Enu">
+  <CompanyDetails Name="Autodesk" Phone=" " Url="https://www.autodesk.com" Email="Revit.apps@autodesk.com"/>
+  <RuntimeRequirements OS="Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2019" SeriesMax="R2019" />
+  <Components Description="2019 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2019" SeriesMax="R2019" />
+    <ComponentEntry AppName="STLExporter" Version="2019" ModuleName="./Contents/2019/STLExport.addin" AppDescription="STLExporterforRevit" />
   </Components>
 </ApplicationPackage>

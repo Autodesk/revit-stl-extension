@@ -549,7 +549,8 @@ namespace BIM.STLExport
                         // now look that up in the open documents
                         foreach (Document openedDoc in m_RevitApp.Documents)
                         {
-                            if (openedDoc.Title.ToUpper() == linkType.Name.ToUpper()) linkedDocs.Add(openedDoc);
+                            if (Path.GetFileNameWithoutExtension(openedDoc.Title).ToUpper() == Path.GetFileNameWithoutExtension(linkType.Name).ToUpper())
+                                linkedDocs.Add(openedDoc);
                         }
                     }
                 }
