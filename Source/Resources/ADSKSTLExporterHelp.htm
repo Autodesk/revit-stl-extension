@@ -48,109 +48,118 @@ h3 {font-size:14.0px;line-height:16px;height:14px;margin-bottom:3px;margin-top:1
 	}
 </style>
 <body>
-<div id="heading">
-	<div id="plugin-icon"><img width="85" height="85" id="Rectangle 3" src="STLExporter_80.png"></div>
-	<div id="plugin-name"><h1 class="separator-line">STL Exporter for Revit</h1></div>
-	<p id="plugin-description">The STL Exporter for Revit is designed to produce a stereolithography file (STL) of your building model.</p>
-</div>
+    <div id="heading">
+        <div id="plugin-icon"><img width="85" height="85" id="Rectangle 3" src="STLExporter_80.png"></div>
+        <div id="plugin-name"><h1 class="separator-line">STL Exporter for Revit</h1></div>
+        <p id="plugin-description">The STL Exporter for Revit is designed to produce a stereolithography file (STL) of your building model.</p>
+    </div>
 
-<div id="navigation">Getting Started
-  <span class="nav-link-spacer">|</span>
-  <a href="#Install">Install/Uninstall</a>
-  <span class="nav-link-spacer">|</span>
-  <a href="#AdditionalInfo">Additional Information</a>
-  <span class="nav-link-spacer">|</span>
-  <a href="#Contact">Contact</a>
-  <span class="nav-link-spacer">|</span>
-  <a class="navigation-link" href="#VersionHistory">Version History</a>
-</div>
+    <div id="navigation">
+        Getting Started
+        <span class="nav-link-spacer">|</span>
+        <a href="#Install">Install/Uninstall</a>
+        <span class="nav-link-spacer">|</span>
+        <a href="#AdditionalInfo">Additional Information</a>
+        <span class="nav-link-spacer">|</span>
+        <a href="#Contact">Contact</a>
+        <span class="nav-link-spacer">|</span>
+        <a class="navigation-link" href="#VersionHistory">Version History</a>
+    </div>
 
-<h2 id="GettingStarted" name="GettingStarted">Getting Started</h2>
-<div class="command">
-	<div class="command icon"><img width="32" height="32" src="STLExporter_32.png" alt="Icon"></div>
-	<div class="command name">STL Exporter for Revit</div>
-	<div class="command description">
-    <p> 
-    The STL Exporter for the Autodesk Revit Platform is a proof-of-concept project designed to create an STL file from a 3D building information model, 
-    thereby enabling easier 3D printing. STL is a popular file format for stereolithography (3D Printing) used for rapid prototyping and computer 
-    aided manufacturing. In the building space, it is used by architects and engineers to build 3D models. This is an add-in for Revit products that provides 
-    the ability to export geometric data from Revit to ASCII and Binary STL files.
+    <h2 id="GettingStarted" name="GettingStarted">Getting Started</h2>
+    <div class="command">
+        <div class="command icon"><img width="32" height="32" src="STLExporter_32.png" alt="Icon"></div>
+        <div class="command name">STL Exporter for Revit</div>
+        <div class="command description">
+            <p>
+                The STL Exporter for the Autodesk Revit Platform is a proof-of-concept project designed to create an STL file from a 3D building information model,
+                thereby enabling easier 3D printing. STL is a popular file format for stereolithography (3D Printing) used for rapid prototyping and computer
+                aided manufacturing. In the building space, it is used by architects and engineers to build 3D models. This is an add-in for Revit products that provides
+                the ability to export geometric data from Revit to ASCII and Binary STL files.
+            </p>
+        </div>
+    </div>
+    <div class="command"></div>
+    <h3>Usage</h3>
+    <p>Clicking on this application button on the UI, will open up a “Export STL” dialog. In the “General” tab of the “Export STL” dialog, select the file format you want to use. If you want to export link models, check “Include Link Models”.</p>
+    <p>In the “Categories” tab, select the categories  in which the models to be exported.</p>
+    <p>Detailed help file can be accessed <a href="STL_Export.chm">here</a></p>
+    <h2 id="Install" name="Install">Installation and Uninstallation</h2>
+    <p>
+        The installer that ran when you downloaded this plug-in from Revit Exchange
+        has already installed the plug-in. You will need to restart Revit to activate
+        the plug-in.
     </p>
-	</div>
-</div>
-<div class="command">
-</div>
-<h3>Usage</h3>
-<p>Clicking on this application button on the UI, will open up a “Export STL” dialog. In the “General” tab of the “Export STL” dialog, select the file format you want to use. If you want to export link models, check “Include Link Models”.</p>
-<p>In the “Categories” tab, select the categories  in which the models to be exported.</p>
-<p>Detailed help file can be accessed <a href="STL_Export.chm">here</a></p>
-<h2 id="Install" name="Install">Installation and Uninstallation</h2>
-<p>
-The installer that ran when you downloaded this plug-in from Revit Exchange 
-  has already installed the plug-in. You will need to restart Revit to activate 
-  the plug-in.
-</p>
-<p>
-To uninstall this plug-in, exit Revit if you are currenting running it, 
-  simply rerun the installer by downloading it again 
-  from Exchange, and select the 'Uninstall' button, or you can uninstall it from 
-  'Settings\Apps\Apps & Features' (Windows 10) or
-  'Control Panel\Programs\Programs and Features' (Windows 7) just as you would 
-  uninstall any other application from your system.
-</p>
-  
-<h2 id="AdditionalInfo" name="AdditionalInfo">Additional Information</h2>
-<p>
-The source code for this application is available as open source, on Github.
-<a href="https://github.com/Autodesk/revit-stl-extension" target="_blank">https://github.com/Autodesk/revit-stl-extension</a></p>
+    <p>
+        To uninstall this plug-in, exit Revit if you are currenting running it,
+        simply rerun the installer by downloading it again
+        from Exchange, and select the 'Uninstall' button, or you can uninstall it from
+        'Settings\Apps\Apps & Features' (Windows 10) or
+        'Control Panel\Programs\Programs and Features' (Windows 7) just as you would
+        uninstall any other application from your system.
+    </p>
 
-<h3>Known Issues</h3>
-<p>None</p>
-<h2 id="Contact" name="Contact">Contact</h2>
-  <p>Autodesk. Please visit us at: <a href="https://www.autodesk.com/" target="_blank">https://www.autodesk.com/</a></p>
-  <p>Autodesk, Inc., is a leader in 3D design, engineering and entertainment software. Customers across the manufacturing, architecture, 
-  building, construction, and media and entertainment industries—including the last 16 Academy Award winners for Best Visual Effects—use 
-  Autodesk software to design, visualize, and simulate their ideas before they’re ever built or created. From blockbuster visual effects 
-  and buildings that create their own energy to electric cars and the batteries that power them, the work of our 3D software customers is everywhere you look.</p>
-  <p>Through our apps for iPhone, iPad, iPod, and Android, we’re also making design technology accessible to professional designers as well as 
-  amateur designers, homeowners, students, and casual creators. Whether it’s a kid looking to build a new contraption, a seasoned pro sketching out 
-  a great new idea, or someone who just wants to amp up their creative output, we’re taking technology originally built for movie studios, automakers, 
-  and architectural firms, and making it available to anyone who wants to create and share their ideas with the world. </p>
-  <p>Since its introduction of AutoCAD software in 1982, Autodesk continues to develop the broadest portfolio of state-of-the-art 3D software for global markets.</p>
-<h3>Support Information</h3>
-<p>Autodesk Services & Support Center: <a href="https://knowledge.autodesk.com/support" target="_blank">https://knowledge.autodesk.com/support</a></p>
-<p>Login to subscription customer: <a href="https://accounts.autodesk.com/Authentication/LogOn" target="_blank">https://accounts.autodesk.com/Authentication/LogOn</a></p>
-<p>To learn more about subscription: <a href="https://www.autodesk.com/subscription" target="_blank">https://www.autodesk.com/subscription</a></p>
-<p>or if you have an inquiry specific to this add-in, send us an e-mail to: <a href="mailto:Revit.apps@autodesk.com">Revit.apps@autodesk.com</a></p>
-<h2 id="VersionHistory" name="VersionHistory">Version History</h2>
+    <h2 id="AdditionalInfo" name="AdditionalInfo">Additional Information</h2>
+    <p>
+        The source code for this application is available as open source, on Github.
+        <a href="https://github.com/Autodesk/revit-stl-extension" target="_blank">https://github.com/Autodesk/revit-stl-extension</a>
+    </p>
 
-<div class="versionset">
-  <div class="version">2019.0.0</div>
-  <div class="versioninfo-bullet">Added support for Revit 2019</div>
-</div>
-<div class="versionset">
-  <div class="version">2018.0.0</div>
-  <div class="versioninfo-bullet">Added support for Revit 2018</div>
-</div>
-<div class="versionset">
-  <div class="version">2017.0.0</div>
-  <div class="versioninfo-bullet">Added support for Revit 2017</div>
-</div>
-<div class="versionset">
-  <div class="version">2016.0.0</div>
-  <div class="versioninfo-bullet">Added support for Revit 2016</div>
-</div>
-<div class="versionset">
-  <div class="version">2015.0.0</div>
-  <div class="versioninfo-bullet">Added support for Revit 2015</div>
-</div>
-<div class="versionset">
-  <div class="version">2014.0.0</div>
-  <div class="versioninfo-bullet">Added support for Revit 2014</div>
-</div>
-<div class="versionset">
-  <div class="version">2013.0.0</div>
-  <div class="versioninfo-bullet">Initial release for Revit 2013</div>
-</div>
+    <h3>Known Issues</h3>
+    <p>None</p>
+    <h2 id="Contact" name="Contact">Contact</h2>
+    <p>Autodesk. Please visit us at: <a href="https://www.autodesk.com/" target="_blank">https://www.autodesk.com/</a></p>
+    <p>
+        Autodesk, Inc., is a leader in 3D design, engineering and entertainment software. Customers across the manufacturing, architecture,
+        building, construction, and media and entertainment industries—including the last 16 Academy Award winners for Best Visual Effects—use
+        Autodesk software to design, visualize, and simulate their ideas before they’re ever built or created. From blockbuster visual effects
+        and buildings that create their own energy to electric cars and the batteries that power them, the work of our 3D software customers is everywhere you look.
+    </p>
+    <p>
+        Through our apps for iPhone, iPad, iPod, and Android, we’re also making design technology accessible to professional designers as well as
+        amateur designers, homeowners, students, and casual creators. Whether it’s a kid looking to build a new contraption, a seasoned pro sketching out
+        a great new idea, or someone who just wants to amp up their creative output, we’re taking technology originally built for movie studios, automakers,
+        and architectural firms, and making it available to anyone who wants to create and share their ideas with the world.
+    </p>
+    <p>Since its introduction of AutoCAD software in 1982, Autodesk continues to develop the broadest portfolio of state-of-the-art 3D software for global markets.</p>
+    <h3>Support Information</h3>
+    <p>Autodesk Services & Support Center: <a href="https://knowledge.autodesk.com/support" target="_blank">https://knowledge.autodesk.com/support</a></p>
+    <p>Login to subscription customer: <a href="https://accounts.autodesk.com/Authentication/LogOn" target="_blank">https://accounts.autodesk.com/Authentication/LogOn</a></p>
+    <p>To learn more about subscription: <a href="https://www.autodesk.com/subscription" target="_blank">https://www.autodesk.com/subscription</a></p>
+    <p>or if you have an inquiry specific to this add-in, send us an e-mail to: <a href="mailto:Revit.apps@autodesk.com">Revit.apps@autodesk.com</a></p>
+    <h2 id="VersionHistory" name="VersionHistory">Version History</h2>
+
+    <div class="versionset">
+        <div class="version">2020.0.0</div>
+        <div class="versioninfo-bullet">Added support for Revit 2020</div>
+    </div>
+    <div class="versionset">
+        <div class="version">2019.0.0</div>
+        <div class="versioninfo-bullet">Added support for Revit 2019</div>
+    </div>
+    <div class="versionset">
+        <div class="version">2018.0.0</div>
+        <div class="versioninfo-bullet">Added support for Revit 2018</div>
+    </div>
+    <div class="versionset">
+        <div class="version">2017.0.0</div>
+        <div class="versioninfo-bullet">Added support for Revit 2017</div>
+    </div>
+    <div class="versionset">
+        <div class="version">2016.0.0</div>
+        <div class="versioninfo-bullet">Added support for Revit 2016</div>
+    </div>
+    <div class="versionset">
+        <div class="version">2015.0.0</div>
+        <div class="versioninfo-bullet">Added support for Revit 2015</div>
+    </div>
+    <div class="versionset">
+        <div class="version">2014.0.0</div>
+        <div class="versioninfo-bullet">Added support for Revit 2014</div>
+    </div>
+    <div class="versionset">
+        <div class="version">2013.0.0</div>
+        <div class="versioninfo-bullet">Initial release for Revit 2013</div>
+    </div>
 </body>
 </html>
