@@ -36,8 +36,8 @@ namespace BIM.STLExport
     {
         private DataGenerator m_Generator = null;
         private SortedDictionary<string, Category> m_CategoryList = new SortedDictionary<string, Category>();
-        private SortedDictionary<string, DisplayUnitType> m_DisplayUnits = new SortedDictionary<string, DisplayUnitType>();
-        private static DisplayUnitType m_SelectedDUT = DisplayUnitType.DUT_UNDEFINED;
+        private SortedDictionary<string, ForgeTypeId> m_DisplayUnits = new SortedDictionary<string, ForgeTypeId>();
+        private static ForgeTypeId m_SelectedDUT = new ForgeTypeId();
 
         readonly Autodesk.Revit.UI.UIApplication m_Revit = null;
 
@@ -64,24 +64,24 @@ namespace BIM.STLExport
             }
             
             string unitName = "Use Internal: Feet";
-            m_DisplayUnits.Add(unitName, DisplayUnitType.DUT_UNDEFINED);
+            m_DisplayUnits.Add(unitName, new ForgeTypeId());
             int selectedIndex = comboBox_DUT.Items.Add(unitName);
-            if (m_SelectedDUT == DisplayUnitType.DUT_UNDEFINED)
+            if (m_SelectedDUT.Empty())
                comboBox_DUT.SelectedIndex = selectedIndex;
 
             Units currentUnits = m_Revit.ActiveUIDocument.Document.GetUnits();
-            DisplayUnitType currentDut = currentUnits.GetFormatOptions(UnitType.UT_Length).DisplayUnits;
-            unitName = "Use Current: " + LabelUtils.GetLabelFor(currentDut);
+            ForgeTypeId currentDut = currentUnits.GetFormatOptions(SpecTypeId.Length).GetUnitTypeId();
+            unitName = "Use Current: " + LabelUtils.GetLabelForUnit(currentDut);
             m_DisplayUnits.Add(unitName, currentDut);
             selectedIndex = comboBox_DUT.Items.Add(unitName);
             if (m_SelectedDUT == currentDut)
                comboBox_DUT.SelectedIndex = selectedIndex;
 
-            foreach (DisplayUnitType dut in UnitUtils.GetValidDisplayUnits(UnitType.UT_Length))
+            foreach (ForgeTypeId dut in UnitUtils.GetValidUnits(SpecTypeId.Length))
             {
                if (currentDut == dut)
                   continue;
-               unitName = LabelUtils.GetLabelFor(dut);
+               unitName = LabelUtils.GetLabelForUnit(dut);
                m_DisplayUnits.Add(unitName, dut);
                selectedIndex = comboBox_DUT.Items.Add(unitName);
                if (m_SelectedDUT == dut)
@@ -188,7 +188,7 @@ namespace BIM.STLExport
                     }
                 }
 
-                DisplayUnitType dup = m_DisplayUnits[comboBox_DUT.Text];
+                ForgeTypeId dup = m_DisplayUnits[comboBox_DUT.Text];
                 m_SelectedDUT = dup;
 
                 // create settings object to save setting information
