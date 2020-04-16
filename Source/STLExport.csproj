@@ -108,10 +108,10 @@
   <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="RevitAPI">
-      <HintPath>..\..\..\r2020\revit\Releasex64\RevitAPI.dll</HintPath>
+      <HintPath>..\..\..\r2021\revit\Releasex64\RevitAPI.dll</HintPath>
     </Reference>
     <Reference Include="RevitAPIUI">
-      <HintPath>..\..\..\r2020\revit\Releasex64\RevitAPIUI.dll</HintPath>
+      <HintPath>..\..\..\r2021\revit\Releasex64\RevitAPIUI.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
