@@ -478,7 +478,7 @@ namespace BIM.STLExport
                                 y = point.Y;
                                 z = point.Z;
                             }
-                            if (m_Settings.Units != DisplayUnitType.DUT_UNDEFINED)
+                            if (!m_Settings.Units.Empty())
                             {
                                 xyz[3 * n] = UnitUtils.ConvertFromInternalUnits(x, m_Settings.Units);
                                 xyz[3 * n + 1] = UnitUtils.ConvertFromInternalUnits(y, m_Settings.Units);
